@@ -1,0 +1,92 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    max-width: auto;
+    overflow-x: hidden;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 300;
+    background-image: url("/images/sell-custom-valorant-stinger-transition.png");
+}
+
+
+/*navbar*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#0f1922;
+    height: 80px;
+    padding: 10px;
+}
+.logo > img {
+    width: 70px;
+    height: 70px;
+}
+.nav-list {
+    list-style-type: none;
+    display: inline-flex;
+}
+.nav-list > .nav-list-item {
+    margin: 0 20px;
+}
+.nav-list > .nav-list-item > a{
+    color: white;
+    text-decoration: none;
+}
+.nav-list > .nav-list-item > a:hover{
+    color: #FA4454;
+}
+
+.app-name {
+    color: #FA4454;
+    font-size: larger;
+    text-align: center;
+    font-weight: 600;
+}
+
+
+.container {
+    height: 1000px;
+}
+
+
+
+
+
+
+
+/*footer*/
+
+.footer-div {
+    background-color:#0f1922;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer-div > .logo > img {
+    height: 200px;
+    width: 200px;
+}
+
+.foot-menu > .foot-list {
+    list-style-type: none;
+}
+.foot-menu > .foot-list > .foot-list-item > a {
+    text-decoration: none;
+    color: white;
+    font-weight: 200;
+}
+.foot-menu > .foot-list > .foot-list-item > a:hover {
+    color: #FA4454;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#0f1922;
+    text-align: center;
+    color: white;
+    font-weight: 200;
+    height: 80px;
+}
