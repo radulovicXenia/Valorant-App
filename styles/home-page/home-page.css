@@ -1,0 +1,137 @@
+body {
+    box-sizing: border-box;
+    margin: 0 auto;
+    overflow-x: hidden;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 300;
+    max-width: 1200px;
+    background-image: url("../../images/main/sell-custom-valorant-stinger-transition.png");
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navigation-menu {
+    flex-grow: 2;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+nav ul li a:hover {
+    color: #FA4454;
+    transition: 0.1s ease;
+    border-bottom: 5px solid #FA4454;
+    border-radius: 5px;
+}
+
+.logo {
+    width: 90px;
+    height: 90px;
+}
+
+.nav-toggle {
+    display: none;
+    position: absolute;
+    top: 1.5rem;
+    right: 1rem;
+    padding-top: 0.5rem;
+}
+
+.hamburger-icon {
+    filter: invert(100%) sepia(12%) saturate(7454%) hue-rotate(225deg) brightness(115%) contrast(116%);
+}
+
+.hidden{
+    display: none;
+}
+
+.container {
+    height: 100vh;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    color: white;
+    width: 95%;
+}
+
+footer img {
+    width: 90px;
+    height: 90px;
+}
+
+.foot-menu > .foot-list {
+    list-style-type: none;
+}
+
+.foot-menu > .foot-list > .foot-list-item > a {
+    text-decoration: none;
+    color: white;
+    font-weight: 200;
+    display: block;
+}
+
+.foot-menu > .foot-list > .foot-list-item > a:hover {
+    color: #FA4454;
+    transition: 0.4s ease;
+}
+
+.additional-information {
+    color: white;
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    /*Style for Navigation and Hamburger Menu*/
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navigation-menu {
+        height: 0;
+        width: 100%;
+        overflow: hidden;
+        transition: 0.5s height ease-in-out;
+    }
+
+    nav ul {
+        display: block;
+        text-align: center;
+    }
+
+    nav ul li {
+        padding: 1.2rem 0;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    .open {
+        height: 100vh;
+    }
+}
