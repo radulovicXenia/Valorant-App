@@ -123,8 +123,9 @@ nav ul li a:hover {
 
 .slider {
     /*padding: 0 20px;*/
-    height: 100%;
-    width: 100%;
+    max-height: 340px;
+    max-width: 100%;
+    overflow: hidden;
     background-color: rgba(0, 0, 0, 0.349);
     position: relative;
     border-radius: 10px;
@@ -142,7 +143,7 @@ nav ul li a:hover {
     justify-content: center;
     position: relative;
     width: 30%;
-    background-color: red;
+    background-color: rgba(255, 0, 0, 0.337);
     height: 100%;
 }
 .slider > .slider-tab > .slider-block > button {
@@ -151,6 +152,12 @@ nav ul li a:hover {
     border: none;
     padding: 10px;
     cursor: pointer;
+}
+.slider > .slider-tab.slider-tab-hidden {
+    display: none;
+}
+.slider > .slider-tab.slider-tab-visible {
+    display: flex;
 }
 
 /*slider buttons*/
