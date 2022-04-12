@@ -8,6 +8,8 @@ body {
     background-image: url("../../images/main/sell-custom-valorant-stinger-transition.png");
 }
 
+/* === HEADER === */
+
 nav {
     background-color: #0f1922;
     display: flex;
@@ -97,9 +99,53 @@ nav ul li a:hover {
     display: block;
 }
 
+/* === CONTAINER === */
+
 .container {
     height: 100vh;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 20px;
 }
+
+.main-column {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+/*slider*/
+
+.slider {
+    background-color: red;
+}
+
+/*top rated*/
+
+.top-rated {
+    background-color: red;
+}
+
+
+.sidebar {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+/*best*/
+
+.best {
+    background-color: red;
+}
+
+/*FB Feed*/
+
+.facebook-feed {
+    background-color: red;
+}
+
+/* === FOOTER === */
 
 .footer {
     background-color: #0f1922;
