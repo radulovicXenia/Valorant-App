@@ -1,8 +1,12 @@
-body {
+* {
+    font-family: 'Kanit', sans-serif;
     box-sizing: border-box;
+}
+
+
+body {
     margin: 0 auto;
     overflow-x: hidden;
-    font-family: 'Kanit', sans-serif;
     font-weight: 300;
     max-width: 1200px;
     background-image: url("../../images/main/sell-custom-valorant-stinger-transition.png");
@@ -109,21 +113,70 @@ nav ul li a:hover {
 }
 
 .main-column {
+    width: 100%;
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: min-content;
     grid-gap: 20px;
 }
 
 /*slider*/
 
 .slider {
-    background-color: red;
+    /*padding: 0 20px;*/
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.349);
+    position: relative;
+    border-radius: 10px;
 }
+.slider > .slider-tab {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 35px;
+    max-width: 100%;
+    height: 300px;
+}
+.slider > .slider-tab > .slider-block {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 30%;
+    background-color: red;
+    height: 100%;
+}
+.slider > .slider-tab > .slider-block > button {
+    position: absolute;
+    bottom: 10px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/*slider buttons*/
+.slider > .slider-actions {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+}
+.slider > .slider-actions > button {
+    border-radius: 50px;
+    border: 0;
+    font-weight: bold;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+}
+
+
 
 /*top rated*/
 
 .top-rated {
-    background-color: red;
+    background-color: rgba(0, 0, 0, 0.349);
 }
 
 
@@ -136,13 +189,13 @@ nav ul li a:hover {
 /*best*/
 
 .best {
-    background-color: red;
+    background-color: rgba(0, 0, 0, 0.349);
 }
 
 /*FB Feed*/
 
 .facebook-feed {
-    background-color: red;
+    background-color: rgba(0, 0, 0, 0.349);
 }
 
 /* === FOOTER === */
