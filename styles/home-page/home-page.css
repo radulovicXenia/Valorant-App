@@ -121,6 +121,7 @@ footer img {
 }
 
 .foot-menu > .foot-list > .foot-list-item > a {
+    margin-top: 5px;
     text-decoration: none;
     color: white;
     font-weight: 200;
@@ -133,6 +134,7 @@ footer img {
 }
 
 .additional-information {
+    padding: 20px;
     color: white;
     text-align: center;
 }
