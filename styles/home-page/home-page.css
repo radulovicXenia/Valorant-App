@@ -172,6 +172,7 @@ nav ul li a:hover {
 .slider > .slider-tab > .slider-block > button:hover {
     background-color: #FA4454;
     color: white;
+    transition: 0.4s ease;
 }
 .slider > .slider-tab.slider-tab-hidden {
     display: none;
@@ -281,6 +282,7 @@ nav ul li a:hover {
 .top-rated-action > button:hover {
     background-color: #FA4454;
     color: white;
+    transition: 0.4s ease
 }
 
 .overlay {
@@ -293,6 +295,7 @@ nav ul li a:hover {
 
 .top-rated-tab > .top-rated-item:hover .overlay {
     visibility: visible;
+    transition: 0.5s ease;
 }
 
 
@@ -322,6 +325,11 @@ nav ul li a:hover {
 .top-rated-tab-two {
     visibility:hidden;
 }
+.top-rated-tab-two > .top-rated-item:hover .overlay {
+    visibility: visible;
+    transition: 0.5s ease;
+}
+
 
 /*this is to load more items when the button is clicked*/
 
@@ -361,6 +369,7 @@ nav ul li a:hover {
 .top-rated-action-two > button:hover {
     background-color: #FA4454;
     color: white;
+    transition: 0.4s ease;
 }
 
 
