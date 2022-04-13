@@ -116,7 +116,7 @@ nav ul li a:hover {
     width: 100%;
     max-width: 885px;
     display: grid;
-    grid-template-rows: min-content;
+    grid-template-rows: auto auto;
     grid-gap: 20px;
 }
 
@@ -204,13 +204,16 @@ nav ul li a:hover {
 /*top rated*/
 
 .top-rated {
+    display: block;
     background-color: rgba(0, 0, 0, 0.349);
     border-radius: 10px;
-    max-height: max-content;
+    max-height: 500px;
     max-width: 885px;
     overflow: hidden;
 }
+
 .top-rated-tab {
+    overflow: hidden;
     height: 350px;
     max-height: fit-content;
     max-width: 785px;
@@ -257,7 +260,7 @@ nav ul li a:hover {
     align-items: center;
 }
 
-.top-rated-action > button {
+.top-rated-action > .btn {
     font-family: 'Kanit', sans-serif;
     background-color: #0f1922;
     color: #FA4454;
@@ -267,6 +270,12 @@ nav ul li a:hover {
     padding: 10px;
     margin-bottom: 20px;
     cursor: pointer;
+}
+.top-rated-action > .btn.hidden {
+    height: 0;
+    width: 0;
+    padding: 0;
+    margin: 0;
 }
 
 .top-rated-action > button:hover {
@@ -288,10 +297,78 @@ nav ul li a:hover {
 
 
 
+.top-rated-tab-two {
+    overflow: hidden;
+    height: 350px;
+    max-height: fit-content;
+    max-width: 785px;
+    margin: 0 50px 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.top-rated-tab-two > .top-rated-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    height: 150px;
+    width: 30%;
+    background-color: #fa445355;
+    cursor: pointer;
+}
+.top-rated-tab-two {
+    visibility:hidden;
+}
+
+/*this is to load more items when the button is clicked*/
+
+.top-rated.active {
+    max-height: 950px;
+}
+
+.top-rated-tab-two.active {
+    visibility: visible;
+}
+.top-rated-tab-two.active > .top-rated {
+    max-height: max-content;
+}
+
+.top-rated-action-two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top-rated-action-two > .btn {
+    font-family: 'Kanit', sans-serif;
+    background-color: #0f1922;
+    color: #FA4454;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.top-rated-action-two > .btn.hidden {
+    height: 0;
+    width: 0;
+    padding: 0;
+    margin: 0;
+}
+.top-rated-action-two > button:hover {
+    background-color: #FA4454;
+    color: white;
+}
+
+
+
 
 .sidebar {
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: max-content;
     grid-gap: 20px;
 }
 
@@ -302,7 +379,7 @@ nav ul li a:hover {
     border-radius: 10px;
     display: block;
     max-width: 295px;
-    max-height: fit-content;
+    max-height: 456px;
 }
 .best-player {
     position: relative;
@@ -335,6 +412,7 @@ nav ul li a:hover {
     background-color: rgba(0, 0, 0, 0.349);
     border-radius: 10px;
     overflow: hidden;
+    max-height: 463px;
 }
 
 /* === FOOTER === */

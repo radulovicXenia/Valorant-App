@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+    <!-- === Developed By Ognjen Kecina & Ksenija Radulovic === -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,6 +15,9 @@
     <!-- === JS FOR FACEBOOK PAGE === -->
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v13.0" nonce="DOZnPwDN"></script>
+
+
+<!-- === HEADER === -->
 <header>
     <nav>
         <div>
@@ -52,12 +56,13 @@
     </nav>
 </header>
 
-
+<!-- === CONTENT === -->
 <main>
     <div class="container">
 
-        <!--ovo je glavna kolona gdje je slider i tpo rated-->
+        <!-- === MAIN COLUMN === -->
         <div class="main-column">
+            
             <!--slider-->
             <div class="slider" id="slider">
 
@@ -114,7 +119,7 @@
             </div>
 
             <!--top rated-->
-            <div class="top-rated">
+            <div class="top-rated" id="topRated">
 
                 <div class="title">
                     Top Rated Skin Bundles
@@ -208,14 +213,103 @@
                 </div>
 
                 <div class="top-rated-action">
-                    <button>Load More</button>
+                    <button id="loadMore" class="btn">Load More</button>
+                </div>
+
+                <div class="top-rated-tab-two" id="tabTwo">
+
+                    <div class="top-rated-item">
+                        <div class="top-rated-image">
+
+                        </div>
+                        <div class="top-rated-list">
+                            <li class="top-rated-list-item">Title</li>
+                            <li class="top-rated-list-item">Tier</li>
+                            <li class="top-rated-list-item">Cost</li>
+                        </div>
+                        <div class="overlay">
+
+                        </div>
+                    </div>
+
+                    <div class="top-rated-item">
+                        <div class="top-rated-image">
+
+                        </div>
+                        <div class="top-rated-list">
+                            <li class="top-rated-list-item">Title</li>
+                            <li class="top-rated-list-item">Tier</li>
+                            <li class="top-rated-list-item">Cost</li>
+                        </div>
+                        <div class="overlay">
+                            
+                        </div>
+                    </div>
+
+                    <div class="top-rated-item">
+                        <div class="top-rated-image">
+
+                        </div>
+                        <div class="top-rated-list">
+                            <li class="top-rated-list-item">Title</li>
+                            <li class="top-rated-list-item">Tier</li>
+                            <li class="top-rated-list-item">Cost</li>
+                        </div>
+                        <div class="overlay">
+                            
+                        </div>
+                    </div>
+
+                    <div class="top-rated-item">
+                        <div class="top-rated-image">
+
+                        </div>
+                        <div class="top-rated-list">
+                            <li class="top-rated-list-item">Title</li>
+                            <li class="top-rated-list-item">Tier</li>
+                            <li class="top-rated-list-item">Cost</li>
+                        </div>
+                        <div class="overlay">
+                            
+                        </div>
+                    </div>
+
+                    <div class="top-rated-item">
+                        <div class="top-rated-image">
+
+                        </div>
+                        <div class="top-rated-list">
+                            <li class="top-rated-list-item">Title</li>
+                            <li class="top-rated-list-item">Tier</li>
+                            <li class="top-rated-list-item">Cost</li>
+                        </div>
+                        <div class="overlay">
+                            
+                        </div>
+                    </div>
+
+                    <div class="top-rated-item">
+                        <div class="top-rated-image">
+
+                        </div>
+                        <div class="top-rated-list">
+                            <li class="top-rated-list-item">Title</li>
+                            <li class="top-rated-list-item">Tier</li>
+                            <li class="top-rated-list-item">Cost</li>
+                        </div>
+                        <div class="overlay">
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="top-rated-action-two">
+                    <button id="loadLess" class="btn">Load Less</button>
                 </div>
             </div>
         </div>
 
-
-        <!--ovo je sidebar gdje ce biti best i facebook feed. sidebar treba sakriti kod mobilne verzije-->
-
+        <!-- === SIDEBAR === -->
         <div class="sidebar">
             <!--best-->
             <div class="best">
@@ -267,7 +361,7 @@
     </div>
 </main>
 
-
+<!-- === FOOTER === -->
 <footer>
     <div class="footer">
         <a href="/index.html"><img src="images/main/logo.png" alt="logo"></a>
@@ -294,5 +388,6 @@
 </footer>
 <script src="js/home-page/home-page-slider.js"></script>
 <script src="js/home-page/home-page.js"></script>
+<script src="js/home-page/home-page-top-rated.js"></script>
 </body>
 </html>
