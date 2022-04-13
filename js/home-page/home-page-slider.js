@@ -43,7 +43,9 @@ function moveToNextSlide() {
     } else {
         slidePosition++;
     }
+    setTimeout(moveToNextSlide, 3000);
 };
+moveToNextSlide();
 
 function moveToPrevSlide() {
     updateSlidePosition();
