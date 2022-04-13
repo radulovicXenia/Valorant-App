@@ -123,12 +123,18 @@ nav ul li a:hover {
 
 .slider {
     /*padding: 0 20px;*/
-    max-height: 340px;
+    max-height: 500px;
     max-width: 100%;
     overflow: hidden;
     background-color: rgba(0, 0, 0, 0.349);
     position: relative;
     border-radius: 10px;
+}
+.slider > .slider-title {
+    color: #FA4454;
+    font-size: larger;
+    font-weight: bold;
+    margin: 20px 50px;
 }
 .slider > .slider-tab {
     display: flex;
@@ -147,7 +153,10 @@ nav ul li a:hover {
     height: 100%;
 }
 .slider > .slider-tab > .slider-block > button {
-    font-family: inherit;
+    font-family: 'Kanit', sans-serif;
+    background-color: #0f1922;
+    color: #FA4454;
+    font-weight: bold;
     position: absolute;
     bottom: 10px;
     border: none;
