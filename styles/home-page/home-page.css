@@ -217,7 +217,7 @@ nav ul li a:hover {
     height: 350px;
     max-height: fit-content;
     max-width: 785px;
-    margin: 0 50px 20px 50px;
+    margin: 0 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -268,7 +268,7 @@ nav ul li a:hover {
     border: none;
     border-radius: 5px;
     padding: 10px;
-    margin-bottom: 20px;
+    margin: 20px 0;
     cursor: pointer;
 }
 .top-rated-action > .btn.hidden {
