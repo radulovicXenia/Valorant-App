@@ -160,6 +160,7 @@ nav ul li a:hover {
     background-color: #fa445355;
 }
 .map-block > .map-description {
+    padding: 0 50px;
     font-size: large;
     margin-top: 20px;
     margin-bottom: 20px;
