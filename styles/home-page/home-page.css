@@ -147,6 +147,7 @@ nav ul li a:hover {
     height: 100%;
 }
 .slider > .slider-tab > .slider-block > button {
+    font-family: inherit;
     position: absolute;
     bottom: 10px;
     border: none;
