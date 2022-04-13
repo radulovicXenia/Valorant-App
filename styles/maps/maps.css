@@ -103,11 +103,72 @@ nav ul li a:hover {
     display: block;
 }
 
-/* === CONTENT === */
 
+
+
+
+/* === CONTENT === */
+/*
 .container {
     height: 100vh;
+}*/
+
+.map-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
+.map-menu-list {
+    list-style-type: none;
+    display: inline-flex;
+}
+.map-menu-list > .map-list-item {
+    margin-left: 20px;
+}
+.map-menu-list > .map-list-item > a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+}
+.map-menu-list > .map-list-item > a:hover {
+    color: #FA4454;
+    transition: 0.4s ease
+}
+
+
+
+.map-block {
+    background-color: rgba(0, 0, 0, 0.349);
+    margin: 100px 100px;
+    padding: 0 35px 10px 35px;
+    height: min-content;
+    border-radius: 10px;
+}
+.map-block > .map-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #FA4454;
+}
+.map-block > .map-picture {
+    height: 500px;
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #fa445355;
+}
+.map-block > .map-description {
+    font-size: large;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #FA4454;
+}
+
+
+
+
 
 /* === FOOTER === */
 
