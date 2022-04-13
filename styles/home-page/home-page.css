@@ -334,6 +334,7 @@ nav ul li a:hover {
 .facebook-feed {
     background-color: rgba(0, 0, 0, 0.349);
     border-radius: 10px;
+    overflow: hidden;
 }
 
 /* === FOOTER === */
