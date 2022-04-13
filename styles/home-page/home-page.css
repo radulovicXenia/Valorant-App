@@ -106,7 +106,7 @@ nav ul li a:hover {
 /* === CONTAINER === */
 
 .container {
-    height: 100vh;
+    /*height: 100vh;*/
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-gap: 20px;
@@ -114,6 +114,7 @@ nav ul li a:hover {
 
 .main-column {
     width: 100%;
+    max-width: 885px;
     display: grid;
     grid-template-rows: min-content;
     grid-gap: 20px;
@@ -123,14 +124,22 @@ nav ul li a:hover {
 
 .slider {
     /*padding: 0 20px;*/
-    max-height: 340px;
+    max-height: max-content;
     max-width: 100%;
     overflow: hidden;
     background-color: rgba(0, 0, 0, 0.349);
     position: relative;
     border-radius: 10px;
 }
+.title {
+    color: #FA4454;
+    font-size: larger;
+    font-weight: bold;
+    margin: 20px 50px;
+}
 .slider > .slider-tab {
+    border-radius: 10px;
+    overflow: hidden;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -139,19 +148,30 @@ nav ul li a:hover {
     height: 300px;
 }
 .slider > .slider-tab > .slider-block {
+    border-radius: 10px;
+    overflow: hidden;
     display: flex;
     justify-content: center;
     position: relative;
     width: 30%;
-    background-color: rgba(255, 0, 0, 0.337);
+    background-color: #fa445355;
     height: 100%;
 }
 .slider > .slider-tab > .slider-block > button {
+    font-family: 'Kanit', sans-serif;
+    background-color: #0f1922;
+    color: #FA4454;
+    font-weight: bold;
     position: absolute;
     bottom: 10px;
     border: none;
+    border-radius: 5px;
     padding: 10px;
     cursor: pointer;
+}
+.slider > .slider-tab > .slider-block > button:hover {
+    background-color: #FA4454;
+    color: white;
 }
 .slider > .slider-tab.slider-tab-hidden {
     display: none;
@@ -170,12 +190,13 @@ nav ul li a:hover {
     transform: translateY(-50%);
 }
 .slider > .slider-actions > button {
-    border-radius: 50px;
-    border: 0;
-    font-weight: bold;
+    background: none;
+    border: none;
+    font-size: 40px;
+    color: #FA4454;
     cursor: pointer;
     width: 30px;
-    height: 30px;
+    height: 40px;
 }
 
 
@@ -184,7 +205,88 @@ nav ul li a:hover {
 
 .top-rated {
     background-color: rgba(0, 0, 0, 0.349);
+    border-radius: 10px;
+    max-height: max-content;
+    max-width: 885px;
+    overflow: hidden;
 }
+.top-rated-tab {
+    height: 350px;
+    max-height: fit-content;
+    max-width: 785px;
+    margin: 0 50px 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.top-rated-tab > .top-rated-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    height: 150px;
+    width: 30%;
+    background-color: #fa445355;
+    cursor: pointer;
+}
+
+.top-rated-image {
+    width: 50%;
+    height: 100%;
+    background-color: #FA4454;
+}
+
+.top-rated-list {
+    text-align: center;
+    width: 50%;
+    height: fit-content;
+    list-style-type: none;
+}
+
+.top-rated-list > .top-rated-list-item {
+    font-weight: bold;
+    color: #FA4454;
+}
+
+.top-rated-action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-rated-action > button {
+    font-family: 'Kanit', sans-serif;
+    background-color: #0f1922;
+    color: #FA4454;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.top-rated-action > button:hover {
+    background-color: #FA4454;
+    color: white;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color:#0f1922b4;
+    visibility: hidden;
+}
+
+.top-rated-tab > .top-rated-item:hover .overlay {
+    visibility: visible;
+}
+
+
 
 
 .sidebar {
@@ -197,12 +299,42 @@ nav ul li a:hover {
 
 .best {
     background-color: rgba(0, 0, 0, 0.349);
+    border-radius: 10px;
+    display: block;
+    max-width: 295px;
+    max-height: fit-content;
+}
+.best-player {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #fa445355;
+    margin:0 50px 20px 50px;
+    cursor: pointer;
+}
+.best-player:hover .overlay {
+    top: 0;
+    left: 0;
+    visibility: visible;
+}
+.best-player > .player-card {
+    width: 100%;
+    height: 100px;
+    background-color: #FA4454;
+}
+.best-player > .player-info {
+    padding: 20px;
+    text-align: center;
+    color: #FA4454;
+    font-weight: bold;
 }
 
 /*FB Feed*/
 
 .facebook-feed {
     background-color: rgba(0, 0, 0, 0.349);
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 /* === FOOTER === */
@@ -241,7 +373,7 @@ footer img {
 
 .additional-information {
     padding: 20px;
-    color: white;
+    color:#FA4454;
     text-align: center;
 }
 
