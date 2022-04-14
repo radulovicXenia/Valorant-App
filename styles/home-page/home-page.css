@@ -55,6 +55,7 @@ nav ul li a:hover {
     top: 1.5rem;
     right: 1rem;
     padding-top: 0.5rem;
+    cursor: pointer;
 }
 
 .hamburger-icon {
@@ -87,7 +88,6 @@ nav ul li a:hover {
     position: absolute;
     background: white;
     min-width: 160px;
-    height: 20vh;
     z-index: 1;
     border-radius: 0.3rem;
 }
@@ -103,15 +103,26 @@ nav ul li a:hover {
 .footer {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     text-align: center;
     color: white;
-    width: 95%;
+    background-color: white;
+    /*border: 3px solid white;*/
+    border-radius: 2rem;
+    margin-bottom: 2rem;
 }
 
 footer img {
-    width: 90px;
-    height: 90px;
+    width: 120px;
+    height: 120px;
+}
+
+.foot-menu{
+    flex-grow: 0.5;
+}
+
+.footer-logo{
+    flex-grow: 0.2;
 }
 
 .foot-menu > .foot-list {
@@ -120,9 +131,11 @@ footer img {
 
 .foot-menu > .foot-list > .foot-list-item > a {
     text-decoration: none;
-    color: white;
+    color: black;
     font-weight: 200;
     display: block;
+    font-size: 1.3rem;
+    padding-bottom: 0.7rem;
 }
 
 .foot-menu > .foot-list > .foot-list-item > a:hover {
@@ -131,8 +144,17 @@ footer img {
 }
 
 .additional-information {
-    color: white;
     text-align: center;
+    font-size: 1.9rem;
+    font-style: italic;
+    font-family: Calibri sans-serif;
+    color: #FA4454;
+    transition: 0.1s ease;
+    border-bottom: 5px solid #FA4454;
+    border-radius: 5px;
+    width: 80%;
+    margin: 0 auto 3.5rem;
+
 }
 
 @media only screen and (max-width: 768px) {
