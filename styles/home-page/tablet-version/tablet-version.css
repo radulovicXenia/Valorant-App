@@ -95,6 +95,16 @@
         margin-bottom: 2rem;
     }
 
+    .slider > .slider-tab > button{
+        background-color: #FA4454;
+        padding: 15px 25px;
+        font-size: 17px;
+    }
+
+    .slider > .slider-tab{
+        border-radius: 0;
+    }
+
     .title {
         text-align: center;
         color: #0f1923;
@@ -123,14 +133,40 @@
     .top-rated-tab > .top-rated-item {
         width: 100%;
         max-width: 250px;
+        background-color: #0f1922;
+        border-radius: 0;
+    }
+
+    .top-rated-list > .top-rated-list-item{
+        color: white;
+        font-family: Calibri;
+        font-size: 17px;
+        font-weight: 500;
     }
 
     .top-rated-tab-two > .top-rated-item {
         width: 100%;
+        background-color: #0f1922;
+    }
+
+    .top-rated-action > .btn{
+        padding: 16px 30px;
+        color: white;
+        font-size: 17px;
+    }
+
+    .top-rated-action-two > .btn {
+        padding: 16px 30px;
+        color: white;
+        font-size: 17px;
     }
 
     .sidebar{
         grid-template-columns: 1fr 1fr;
+    }
+
+    .slider > .slider-tab > button{
+        color: white;
     }
 
     .best {
@@ -147,6 +183,14 @@
     .best-player {
         max-width: 260px;
         width: 100%;
+        background-color: #0f1922;
+        border-radius: 0;
+    }
+
+    .best-player > .player-info {
+        color: white;
+        font-family: Calibri;
+        font-size: 16px;
     }
 
     .facebook-feed{
@@ -167,5 +211,15 @@
 
     .main-column{
         margin: 0 auto;
+    }
+
+    .additional-information {
+        margin-top: 3rem;
+        color: white;
+        font-size: 17px;
+    }
+
+    .footer{
+        justify-content: space-around;
     }
 }
