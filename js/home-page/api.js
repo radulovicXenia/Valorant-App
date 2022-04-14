@@ -1,6 +1,6 @@
 //this is where we pull info from
 
-
+/* === PATCH NOTES API === */
 fetch("https://jsonblob.com/api/964114737269063680")
     .then(response => response.json())
     .then(data => {
@@ -25,4 +25,25 @@ fetch("https://jsonblob.com/api/964114737269063680")
             }
         }
         showSliderInfo();
+    })
+
+/* === LEADERBOARD API === */
+/* The api from the link https://dgxfkpkb4zk5c.cloudfront.net/leaderboards/affinity/EU/queue/competitive/act/573f53ac-41a5-3a7d-d9ce-d6a6298e5704?startIndex=0&size=10 does not work
+so we copied it and put it on jsonblob*/
+// players are already sorted by rank in the api
+fetch("https://jsonblob.com/api/964178412378013696")
+    .then(response => response.json())
+    .then(data=> {
+        let players = data.players;
+
+        function showUsername() {
+
+            let threeBestPlayers = players.slice(0,3);
+
+            let playerUsername = document.getElementsByClassName('pl-username');
+            for(i=0;i<playerUsername.length;i++) {
+                playerUsername[i].innerHTML = threeBestPlayers[i].gameName + " #" + threeBestPlayers[i].tagLine;
+            }
+        }
+        showUsername();
     })
