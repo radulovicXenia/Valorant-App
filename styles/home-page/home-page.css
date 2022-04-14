@@ -159,25 +159,29 @@ nav ul li a:hover {
     color: white;
     font-size: 35px;
 }
+.slider-tab-action {
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-
-.slider > .slider-tab > button {
+.slider > .slider-tab > .slider-tab-action > button {
     font-family: 'Kanit', sans-serif;
-    background-color: #0f1922;
-    color: #FA4454;
+    background-color:#FA4454;
+    color:#0f1922;
     font-weight: bold;
     font-size: large;
-    position: absolute;
-    left: 120px;
-    bottom: 50px;
     border: none;
     border-radius: 5px;
     padding: 20px;
     cursor: pointer;
 }
 
-.slider > .slider-tab > button:hover {
-    background-color: #FA4454;
+.slider > .slider-tab > .slider-tab-action > button:hover {
+    background-color:#952932;
     color: white;
     transition: 0.4s ease;
 }
@@ -263,8 +267,9 @@ nav ul li a:hover {
 }
 
 .top-rated-list > .top-rated-list-item {
+    font-size: small;
     font-weight: bold;
-    color: #FA4454;
+    color: white;
 }
 
 .top-rated-action {
@@ -275,12 +280,13 @@ nav ul li a:hover {
 
 .top-rated-action > .btn {
     font-family: 'Kanit', sans-serif;
-    background-color: #0f1922;
-    color: #FA4454;
+    background-color:#FA4454;
+    color:#0f1922;
+    font-size: large;
     font-weight: bold;
     border: none;
     border-radius: 5px;
-    padding: 10px;
+    padding: 20px;
     margin: 20px 0;
     cursor: pointer;
 }
@@ -293,9 +299,9 @@ nav ul li a:hover {
 }
 
 .top-rated-action > button:hover {
-    background-color: #FA4454;
+    background-color:#952932;
     color: white;
-    transition: 0.4s ease
+    transition: 0.4s ease;
 }
 
 .overlay {
@@ -365,13 +371,14 @@ nav ul li a:hover {
 
 .top-rated-action-two > .btn {
     font-family: 'Kanit', sans-serif;
-    background-color: #0f1922;
-    color: #FA4454;
+    background-color:#FA4454;
+    color:#0f1922;
+    font-size: large;
     font-weight: bold;
     border: none;
     border-radius: 5px;
-    padding: 10px;
-    margin-bottom: 20px;
+    padding: 20px;
+    margin: 20px 0;
     cursor: pointer;
 }
 
@@ -383,7 +390,7 @@ nav ul li a:hover {
 }
 
 .top-rated-action-two > button:hover {
-    background-color: #FA4454;
+    background-color:#952932;
     color: white;
     transition: 0.4s ease;
 }
@@ -429,11 +436,15 @@ nav ul li a:hover {
 }
 
 .best-player > .player-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     flex-basis: 50%;
     padding: 20px;
-    text-align: center;
-    color: rgb(255, 144, 144);
-    font-weight: 500;
+    color: white;
+    font-weight: bold;
+    font-size: small;
 }
 
 /*FB Feed*/
