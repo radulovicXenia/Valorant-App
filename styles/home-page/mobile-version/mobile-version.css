@@ -14,7 +14,15 @@
     .slider {
         border-radius: 0;
         background-color: #ece8e1;
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    .slider > .slider-tab{
+        border-radius: 0;
+    }
+
+    .slider > .slider-tab > button{
+        color: white;
     }
 
     .top-rated {
@@ -31,6 +39,14 @@
 
     .top-rated-tab > .top-rated-item {
         width: 100%;
+        background-color: #0f1922;
+    }
+
+    .top-rated-list > .top-rated-list-item{
+        color: white;
+        font-family: Calibri;
+        font-size: 17px;
+        font-weight: 500;
     }
 
     .top-rated-tab-two.active{
@@ -41,6 +57,19 @@
 
     .top-rated-tab-two > .top-rated-item {
         width: 100%;
+        background-color: #0f1922;
+    }
+
+    .top-rated-action > .btn{
+        padding: 16px 30px;
+        color: white;
+        font-size: 17px;
+    }
+
+    .top-rated-action-two > .btn {
+        padding: 16px 30px;
+        color: white;
+        font-size: 17px;
     }
 
     .best {
@@ -57,6 +86,13 @@
     .best-player {
         max-width: 260px;
         width: 100%;
+        background-color: #0f1922;
+    }
+
+    .best-player > .player-info {
+        color: white;
+        font-family: Calibri;
+        font-size: 16px;
     }
 
     .facebook-feed {
@@ -65,6 +101,7 @@
         display: flex;
         flex-direction: column;
         margin-bottom: 2rem;
+        height: 700px;
     }
 
     .fb-page {
@@ -87,6 +124,22 @@
     }
 
     @media only screen and (max-width: 450px) {
+        .slider > .slider-tab > .slider-tab-text{
+            top: 25%;
+            font-size: 19px;
+            font-family: Calibri;
+        }
+
+        .slider > .slider-tab > button{
+            background-color: #FA4454;
+            padding: 15px 25px;
+            font-size: 17px;
+        }
+
+        .slider > .slider-tab{
+            border-radius: 0;
+        }
+
         .top-rated {
             border-radius: 0;
             margin-bottom: 3rem;
@@ -101,6 +154,7 @@
 
         .top-rated-tab > .top-rated-item {
             width: 100%;
+            border-radius: 0;
         }
 
         .top-rated-tab-two.active{
@@ -111,6 +165,48 @@
 
         .top-rated-tab-two > .top-rated-item {
             width: 100%;
+        }
+
+        .best-player{
+            border-radius: 0;
+        }
+
+        .additional-information {
+            color: white;
+            margin-top: 3rem;
+        }
+
+        .foot-menu > .foot-list > .foot-list-item > a {
+            font-size: 18px;
+        }
+
+        .footer{
+            justify-content: space-evenly;
+        }
+    }
+
+    @media only screen and (max-width: 375px) {
+        .slider > .slider-tab > .slider-tab-text{
+            top: 16%;
+            font-size: 15px;
+            font-family: Calibri;
+        }
+
+        .slider > .slider-tab > img{
+            width: 300px;
+            height: 300px;
+        }
+
+        .slider > .slider-tab{
+            height: auto;
+        }
+
+        .foot-menu > .foot-list > .foot-list-item > a {
+            font-size: 17px;
+        }
+
+        .additional-information {
+            font-size: 15px;
         }
     }
 }
