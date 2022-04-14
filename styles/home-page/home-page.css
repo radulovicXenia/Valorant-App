@@ -131,12 +131,14 @@ nav ul li a:hover {
     position: relative;
     border-radius: 10px;
 }
+
 .title {
     color: #FA4454;
     font-size: larger;
     font-weight: bold;
     margin: 20px 50px;
 }
+
 .slider > .slider-tab {
     border-radius: 10px;
     overflow: hidden;
@@ -147,6 +149,7 @@ nav ul li a:hover {
     max-width: 100%;
     height: 300px;
 }
+
 .slider > .slider-tab > .slider-block {
     border-radius: 10px;
     overflow: hidden;
@@ -157,6 +160,7 @@ nav ul li a:hover {
     background-color: #fa445355;
     height: 100%;
 }
+
 .slider > .slider-tab > .slider-block > button {
     font-family: 'Kanit', sans-serif;
     background-color: #0f1922;
@@ -169,13 +173,16 @@ nav ul li a:hover {
     padding: 10px;
     cursor: pointer;
 }
+
 .slider > .slider-tab > .slider-block > button:hover {
     background-color: #FA4454;
     color: white;
 }
+
 .slider > .slider-tab.slider-tab-hidden {
     display: none;
 }
+
 .slider > .slider-tab.slider-tab-visible {
     display: flex;
 }
@@ -186,9 +193,10 @@ nav ul li a:hover {
     width: 100%;
     justify-content: space-between;
     position: absolute;
-    top:50%;
+    top: 50%;
     transform: translateY(-50%);
 }
+
 .slider > .slider-actions > button {
     background: none;
     border: none;
@@ -199,10 +207,7 @@ nav ul li a:hover {
     height: 40px;
 }
 
-
-
 /*top rated*/
-
 .top-rated {
     display: block;
     background-color: rgba(0, 0, 0, 0.349);
@@ -271,6 +276,7 @@ nav ul li a:hover {
     margin: 20px 0;
     cursor: pointer;
 }
+
 .top-rated-action > .btn.hidden {
     height: 0;
     width: 0;
@@ -287,15 +293,13 @@ nav ul li a:hover {
     width: 100%;
     height: 100%;
     position: absolute;
-    background-color:#0f1922b4;
+    background-color: #0f1922b4;
     visibility: hidden;
 }
 
 .top-rated-tab > .top-rated-item:hover .overlay {
     visibility: visible;
 }
-
-
 
 .top-rated-tab-two {
     overflow: hidden;
@@ -308,6 +312,7 @@ nav ul li a:hover {
     align-items: center;
     flex-wrap: wrap;
 }
+
 .top-rated-tab-two > .top-rated-item {
     position: relative;
     overflow: hidden;
@@ -319,12 +324,12 @@ nav ul li a:hover {
     background-color: #fa445355;
     cursor: pointer;
 }
+
 .top-rated-tab-two {
-    visibility:hidden;
+    visibility: hidden;
 }
 
 /*this is to load more items when the button is clicked*/
-
 .top-rated.active {
     max-height: 950px;
 }
@@ -332,6 +337,7 @@ nav ul li a:hover {
 .top-rated-tab-two.active {
     visibility: visible;
 }
+
 .top-rated-tab-two.active > .top-rated {
     max-height: max-content;
 }
@@ -341,6 +347,7 @@ nav ul li a:hover {
     justify-content: center;
     align-items: center;
 }
+
 .top-rated-action-two > .btn {
     font-family: 'Kanit', sans-serif;
     background-color: #0f1922;
@@ -352,19 +359,18 @@ nav ul li a:hover {
     margin-bottom: 20px;
     cursor: pointer;
 }
+
 .top-rated-action-two > .btn.hidden {
     height: 0;
     width: 0;
     padding: 0;
     margin: 0;
 }
+
 .top-rated-action-two > button:hover {
     background-color: #FA4454;
     color: white;
 }
-
-
-
 
 .sidebar {
     display: grid;
@@ -373,7 +379,6 @@ nav ul li a:hover {
 }
 
 /*best*/
-
 .best {
     background-color: rgba(0, 0, 0, 0.349);
     border-radius: 10px;
@@ -381,24 +386,28 @@ nav ul li a:hover {
     max-width: 295px;
     max-height: 456px;
 }
+
 .best-player {
     position: relative;
     overflow: hidden;
     border-radius: 10px;
     background-color: #fa445355;
-    margin:0 50px 20px 50px;
+    margin: 0 50px 20px 50px;
     cursor: pointer;
 }
+
 .best-player:hover .overlay {
     top: 0;
     left: 0;
     visibility: visible;
 }
+
 .best-player > .player-card {
     width: 100%;
     height: 100px;
     background-color: #FA4454;
 }
+
 .best-player > .player-info {
     padding: 20px;
     text-align: center;
@@ -407,7 +416,6 @@ nav ul li a:hover {
 }
 
 /*FB Feed*/
-
 .facebook-feed {
     background-color: rgba(0, 0, 0, 0.349);
     border-radius: 10px;
@@ -416,7 +424,6 @@ nav ul li a:hover {
 }
 
 /* === FOOTER === */
-
 .footer {
     background-color: #0f1922;
     display: flex;
@@ -451,7 +458,7 @@ footer img {
 
 .additional-information {
     padding: 20px;
-    color:#FA4454;
+    color: #FA4454;
     text-align: center;
 }
 
@@ -492,7 +499,7 @@ footer img {
         z-index: 1;
     }
 
-    .dropdown{
+    .dropdown {
         display: block;
         width: 100%;
     }
