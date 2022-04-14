@@ -401,7 +401,7 @@ nav ul li a:hover {
     border-radius: 10px;
     display: block;
     max-width: 295px;
-    max-height: 456px;
+    max-height: min-content
 }
 
 .best-player {
@@ -409,7 +409,7 @@ nav ul li a:hover {
     overflow: hidden;
     border-radius: 10px;
     background-color: #fa445355;
-    margin: 0 50px 20px 50px;
+    margin: 0 80px 20px 90px;
     cursor: pointer;
 }
 
@@ -421,15 +421,19 @@ nav ul li a:hover {
 
 .best-player > .player-card {
     width: 100%;
-    height: 100px;
+    height: 120px;
     background-color: #FA4454;
+}
+.best-player > .player-card > img {
+    width: 100%;
+    height: 100%;
 }
 
 .best-player > .player-info {
     padding: 20px;
     text-align: center;
-    color: #FA4454;
-    font-weight: bold;
+    color: rgb(255, 144, 144);
+    font-weight: 500;
 }
 
 /*FB Feed*/
