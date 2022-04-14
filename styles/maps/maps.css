@@ -198,6 +198,8 @@ nav ul li a:hover {
     text-align: center;
     color: white;
     width: 95%;
+    margin-top: 3rem;
+
 }
 
 footer img {
@@ -215,6 +217,8 @@ footer img {
     color: white;
     font-weight: 200;
     display: block;
+    font-size: 20px;
+    margin-bottom: 15px;
 }
 
 .foot-menu > .foot-list > .foot-list-item > a:hover {
@@ -224,7 +228,7 @@ footer img {
 
 .additional-information {
     padding: 20px;
-    color:#FA4454;
+    color: #FA4454;
     text-align: center;
 }
 
