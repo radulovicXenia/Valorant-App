@@ -137,27 +137,44 @@ nav ul li a:hover {
     transition: 0.4s ease
 }
 
-
+.maps {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
 
 .map-block {
+    width: 40%;
     background-color: rgba(0, 0, 0, 0.349);
-    margin: 40px 100px;
-    padding: 0 35px 10px 35px;
+    margin-top: 30px;
+    padding: 0 35px 30px 35px;
     height: min-content;
     border-radius: 10px;
+    cursor: pointer;
 }
+.map-block:hover {
+    background-color: black;
+}
+
 .map-block > .map-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #FA4454;
+    color:#FA4454;
+}
+.map-block:hover > .map-title {
+    color: white;
 }
 .map-block > .map-picture {
-    height: 500px;
+    height: 250px;
     width: 100%;
     border-radius: 5px;
     overflow: hidden;
     background-color: #fa445355;
+}
+.map-block > .map-picture > img {
+    width: 100%;
+    height: 100%;
 }
 .map-block > .map-description {
     padding: 0 50px;
@@ -181,6 +198,8 @@ nav ul li a:hover {
     text-align: center;
     color: white;
     width: 95%;
+    margin-top: 3rem;
+
 }
 
 footer img {
@@ -198,6 +217,8 @@ footer img {
     color: white;
     font-weight: 200;
     display: block;
+    font-size: 20px;
+    margin-bottom: 15px;
 }
 
 .foot-menu > .foot-list > .foot-list-item > a:hover {
@@ -207,7 +228,7 @@ footer img {
 
 .additional-information {
     padding: 20px;
-    color:#FA4454;
+    color: #FA4454;
     text-align: center;
 }
 
