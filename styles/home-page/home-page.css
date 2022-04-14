@@ -250,6 +250,10 @@ nav ul li a:hover {
     height: 100%;
     background-color: #FA4454;
 }
+.top-rated-image > img {
+    width: 100%;
+    height: 100%;
+}
 
 .top-rated-list {
     text-align: center;
@@ -400,10 +404,11 @@ nav ul li a:hover {
 
 .best-player {
     position: relative;
+    display: flex;
     overflow: hidden;
     border-radius: 10px;
     background-color: #fa445355;
-    margin: 0 80px 20px 90px;
+    margin: 20px 30px;
     cursor: pointer;
 }
 
@@ -414,9 +419,9 @@ nav ul li a:hover {
 }
 
 .best-player > .player-card {
+    flex-basis: 50%;
     width: 100%;
     height: 120px;
-    background-color: #FA4454;
 }
 .best-player > .player-card > img {
     width: 100%;
@@ -424,6 +429,7 @@ nav ul li a:hover {
 }
 
 .best-player > .player-info {
+    flex-basis: 50%;
     padding: 20px;
     text-align: center;
     color: rgb(255, 144, 144);
