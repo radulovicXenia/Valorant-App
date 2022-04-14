@@ -13,10 +13,10 @@ body {
 }
 
 /* === HEADER === */
-
 header{
     margin-bottom: 2rem;
 }
+
 nav {
     background-color: #0f1922;
     display: flex;
@@ -107,9 +107,7 @@ nav ul li a:hover {
 }
 
 /* === CONTAINER === */
-
 .container {
-    /*height: 100vh;*/
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-gap: 20px;
@@ -124,23 +122,21 @@ nav ul li a:hover {
 }
 
 /*slider*/
-
 .slider {
-    /*padding: 0 20px;*/
     max-height: max-content;
     max-width: 100%;
     overflow: hidden;
-    background-color: #00000059;
-    /*background-color: #f3f1f1;*/
+    background-color: #ece8e1;
     position: relative;
-    border-radius: 10px;
+    margin: 60px 0;
 }
 
 .title {
-    color: #FA4454;
-    font-size: larger;
+    color: #0f1923;
     font-weight: bold;
-    margin: 20px 50px;
+    margin: 35px 50px;
+    font-family: Calibri;
+    font-size: 25px;
 }
 
 .slider > .slider-tab {
@@ -218,12 +214,10 @@ nav ul li a:hover {
 /*top rated*/
 .top-rated {
     display: block;
-    /*background-color: #f3f1f1;*/
-    background-color: #00000059;
+    background-color: #ece8e1;
     max-height: 500px;
     max-width: 885px;
     overflow: hidden;
-    border-radius: 10px;
 }
 
 .top-rated-tab {
@@ -397,11 +391,9 @@ nav ul li a:hover {
 
 /*best*/
 .best {
-    background-color: rgba(0, 0, 0, 0.349);
-    border-radius: 10px;
+    background-color: #ece8e1;
     display: block;
     max-width: 295px;
-    max-height: min-content
 }
 
 .best-player {
@@ -438,10 +430,9 @@ nav ul li a:hover {
 
 /*FB Feed*/
 .facebook-feed {
-    background-color: #00000059;
-    border-radius: 10px;
+    background-color: #ece8e1;
     overflow: hidden;
-    max-height: 463px;
+    height: 650px;
 }
 
 /* === FOOTER === */
@@ -453,6 +444,8 @@ nav ul li a:hover {
     text-align: center;
     color: white;
     width: 95%;
+    margin-top: 3rem;
+
 }
 
 footer img {
@@ -470,6 +463,8 @@ footer img {
     color: white;
     font-weight: 200;
     display: block;
+    font-size: 20px;
+    margin-bottom: 15px;
 }
 
 .foot-menu > .foot-list > .foot-list-item > a:hover {
@@ -483,8 +478,8 @@ footer img {
     text-align: center;
 }
 
+/*Style for Navigation and Hamburger Menu*/
 @media only screen and (max-width: 768px) {
-    /*Style for Navigation and Hamburger Menu*/
     nav {
         flex-direction: column;
         align-items: flex-start;
