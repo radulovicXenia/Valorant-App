@@ -1,0 +1,28 @@
+{
+    "data": [
+        {
+            "id": "vpn01",
+            "title": "Patch Notes 4.07",
+            "date": "2022-04-12",
+            "cover": "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt1ee19384e1572c23/624f7cde7d552701c6366d52/Yoru_Killjoy_1920x1080.jpg",
+            "link": "https://playvalorant.com/en-gb/news/game-updates/valorant-patch-notes-4-07/",
+            "changes": "Server updates, Agent updates, Weapon updates, Store updates, Social updates, Bug fixes"
+        },
+        {
+            "id": "vpn02",
+            "title": "Patch Notes 4.05",
+            "date": "2022-03-22",
+            "cover": "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt7a5e1c1256cf4fe8/622998704142c3684bf53306/Brimstone_Raze_1920x1080.jpg",
+            "link": "https://playvalorant.com/en-gb/news/game-updates/valorant-patch-notes-4-05/",
+            "changes": "Agent updates, Game System updates, Competitive updates, Bug fixes"
+        },
+        {
+            "id": "vpn03",
+            "title": "Patch Notes 4.04",
+            "date": "2022-03-01",
+            "cover": "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt5a65d7659bef8a49/62194d79c4c1b167484d2472/Omen_Yoru_1920x1080.jpg",
+            "link": "hhttps://playvalorant.com/en-gb/news/game-updates/valorant-patch-notes-4-04/",
+            "changes": "Agent updates, Map updates, Competitive updates, Bug fixes"
+        }
+    ]
+}

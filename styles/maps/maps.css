@@ -141,7 +141,7 @@ nav ul li a:hover {
 
 .map-block {
     background-color: rgba(0, 0, 0, 0.349);
-    margin: 100px 100px;
+    margin: 40px 100px;
     padding: 0 35px 10px 35px;
     height: min-content;
     border-radius: 10px;
