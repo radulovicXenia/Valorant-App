@@ -130,7 +130,7 @@ nav ul li a:hover {
     max-height: max-content;
     max-width: 100%;
     overflow: hidden;
-    background-color: black;
+    background-color: #00000059;
     /*background-color: #f3f1f1;*/
     position: relative;
     border-radius: 10px;
@@ -144,41 +144,43 @@ nav ul li a:hover {
 }
 
 .slider > .slider-tab {
-    border-radius: 10px;
-    overflow: hidden;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 20px 35px;
-    max-width: 100%;
-    height: 300px;
-}
-
-.slider > .slider-tab > .slider-block {
-    border-radius: 10px;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
     position: relative;
-    width: 30%;
-    background-color: #fa445355;
-    height: 100%;
+    border-radius: 10px;
+    margin: 20px 35px;
+    max-width: 840px;
+    height: 400px;
+    overflow: hidden;
+}
+.slider > .slider-tab > img {
+    width: 100%;
+    height: auto;
+}
+.slider > .slider-tab > .slider-tab-text {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 150px;
+    color: white;
+    font-size: 35px;
 }
 
-.slider > .slider-tab > .slider-block > button {
+
+.slider > .slider-tab > button {
     font-family: 'Kanit', sans-serif;
     background-color: #0f1922;
     color: #FA4454;
     font-weight: bold;
+    font-size: large;
     position: absolute;
-    bottom: 10px;
+    left: 80px;
+    bottom: 50px;
     border: none;
     border-radius: 5px;
-    padding: 10px;
+    padding: 20px;
     cursor: pointer;
 }
 
-.slider > .slider-tab > .slider-block > button:hover {
+.slider > .slider-tab > button:hover {
     background-color: #FA4454;
     color: white;
     transition: 0.4s ease;
@@ -197,6 +199,7 @@ nav ul li a:hover {
     display: flex;
     width: 100%;
     justify-content: space-between;
+    align-items: center;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -216,7 +219,7 @@ nav ul li a:hover {
 .top-rated {
     display: block;
     /*background-color: #f3f1f1;*/
-    background-color: black;
+    background-color: #00000059;
     max-height: 500px;
     max-width: 885px;
     overflow: hidden;
@@ -431,7 +434,7 @@ nav ul li a:hover {
 
 /*FB Feed*/
 .facebook-feed {
-    background-color: rgba(0, 0, 0, 0.349);
+    background-color: #00000059;
     border-radius: 10px;
     overflow: hidden;
     max-height: 463px;
