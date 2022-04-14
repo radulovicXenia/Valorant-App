@@ -1,83 +1,338 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- === Developed By Ognjen Kecina & Ksenija Radulovic === -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- === CSS === -->
     <link rel="stylesheet" href="styles/home-page/home-page.css">
     <link rel="stylesheet" href="styles/home-page/mobile-version/mobile-version.css">
+    <!-- === FONTS === -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- === FAVICON === -->
     <link rel="shortcut icon" href="images/main/favicon.ico" type="image/x-icon">
     <title>Valorant</title>
 </head>
 <body>
+<!-- === JS FOR FACEBOOK PAGE === -->
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v13.0"
+        nonce="DOZnPwDN"></script>
+<!-- === HEADER === -->
 <header>
     <nav>
         <div>
-            <a href="/index.html"><img src="images/main/logo.png" class="logo" alt="logo"></a>
+            <a href="index.html"><img src="images/main/logo.png" class="logo" alt="logo"></a>
             <div class="nav-toggle" id="navToggle">
-                <img id="hamburger-icon-open" class="hamburger-icon" src="https://www.richardmiddleton.me/wp-content/themes/richardcodes/assets/img/hamburger.svg" alt="hamburger Menu">
-                <img class="hidden hamburger-icon " src="https://www.richardmiddleton.me/wp-content/themes/richardcodes/assets/img/close.svg" alt="close hamburger">
+                <img id="hamburger-icon-open" class="hamburger-icon"
+                     src="https://www.richardmiddleton.me/wp-content/themes/richardcodes/assets/img/hamburger.svg"
+                     alt="hamburger Menu">
+                <img class="hidden hamburger-icon "
+                     src="https://www.richardmiddleton.me/wp-content/themes/richardcodes/assets/img/close.svg"
+                     alt="close hamburger">
             </div>
         </div>
         <div class="navigation-menu">
-                <ul>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <div class="dropdown">
                     <li>
-                        <a href="index.html">Home</a>
+                        <a href="#">List</a>
                     </li>
-                    <div class="dropdown">
-                        <li>
-                            <a href="#">List</a>
-                        </li>
-                        <div class="dropdown-content">
-                            <li><a href="#">Page 1</a></li>
-                            <li><a href="#">Page 2</a></li>
-                            <li><a href="#">Page 3</a></li>
-                        </div>
+                    <div class="dropdown-content">
+                        <li><a href="#">Agents</a></li>
+                        <li><a href="#">Skins</a></li>
+                        <li><a href="#">Weapons</a></li>
                     </div>
-                    <li>
-                        <a href="#">Custom</a>
-                    </li>
-                    <li>
-                        <a href="#">About Us</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact Us</a>
-                    </li>
-                </ul>
+                </div>
+                <li>
+                    <a href="html/maps/maps.html">Maps</a>
+                </li>
+                <li>
+                    <a href="#">About Us</a>
+                </li>
+                <li>
+                    <a href="#">Contact Us</a>
+                </li>
+            </ul>
         </div>
     </nav>
 </header>
+<!-- === CONTENT === -->
 <main>
     <div class="container">
-        <section class="image-slider"></section>
-        <section class="best-agents">
-            <div></div>
-        </section>
-        <section class="facebook-feed">
+        <!-- === MAIN COLUMN === -->
+        <div class="main-column">
+            <!--slider-->
+            <div class="slider" id="slider">
+                <div class="title">
+                    Latest Valorant Patch Notes
+                </div>
+                <div class="slider-tab">
+                    <div class="slider-block">
+                        <img src="images/main/logo.png" alt="logo">
+                        <button id="read-more">Read more</button>
+                    </div>
+                    <div class="slider-block">
+                        <button id="read-more">Read more</button>
+                    </div>
+                    <div class="slider-block">
+                        <button id="read-more">Read more</button>
+                    </div>
+                </div>
 
-        </section>
+                <div class="slider-tab">
+                    <div class="slider-block">
+                        <button id="read-more">Read more</button>
+                    </div>
+                    <div class="slider-block">
+                        <img src="images/main/logo.png" alt="logo">
+                        <button id="read-more">Read more</button>
+                    </div>
+                    <div class="slider-block">
+                        <button id="read-more">Read more</button>
+                    </div>
+                </div>
+
+                <div class="slider-tab">
+                    <div class="slider-block">
+                        <button id="read-more">Read more</button>
+                    </div>
+                    <div class="slider-block">
+                        <button id="read-more">Read more</button>
+                    </div>
+                    <div class="slider-block">
+                        <img src="images/main/logo.png" alt="logo">
+                        <button id="read-more">Read more</button>
+                    </div>
+                </div>
+                <div class="slider-actions">
+                    <!--promijenicu dugmice da ljepse izgledaju cim zavrsim cijeli slider :D-->
+                    <button id="btn_prev" aria-label="previous slide">&#10096;</button>
+                    <button id="btn_next" aria-label="next slide">&#10097;</button>
+                </div>
+            </div>
+            <!--top rated-->
+            <div class="top-rated" id="topRated">
+                <div class="title">
+                    Top Rated Skin Bundles
+                </div>
+                <div class="top-rated-tab default">
+                    <div class="top-rated-item">
+                        <div class="top-rated-image">
+                        </div>
+                        <div class="top-rated-list">
+                            <li class="top-rated-list-item">Title</li>
+                            <li class="top-rated-list-item">Tier</li>
+                            <li class="top-rated-list-item">Cost</li>
+                        </div>
+                        <div class="overlay">
+                        </div>
+                    </div>
+                    <div class="top-rated-item">
+                        <div class="top-rated-image">
+                        </div>
+                        <div class="top-rated-list">
+                            <li class="top-rated-list-item">Title</li>
+                            <li class="top-rated-list-item">Tier</li>
+                            <li class="top-rated-list-item">Cost</li>
+                        </div>
+                        <div class="overlay">
+
+                        </div>
+                    </div>
+                    <div class="top-rated-item">
+                        <div class="top-rated-image">
+                        </div>
+                        <div class="top-rated-list">
+                            <li class="top-rated-list-item">Title</li>
+                            <li class="top-rated-list-item">Tier</li>
+                            <li class="top-rated-list-item">Cost</li>
+                        </div>
+                        <div class="overlay">
+                        </div>
+                    </div>
+                    <div class="top-rated-item">
+                        <div class="top-rated-image">
+                        </div>
+                        <div class="top-rated-list">
+                            <li class="top-rated-list-item">Title</li>
+                            <li class="top-rated-list-item">Tier</li>
+                            <li class="top-rated-list-item">Cost</li>
+                        </div>
+                        <div class="overlay">
+                        </div>
+                    </div>
+                    <div class="top-rated-item">
+                        <div class="top-rated-image">
+                        </div>
+                        <div class="top-rated-list">
+                            <li class="top-rated-list-item">Title</li>
+                            <li class="top-rated-list-item">Tier</li>
+                            <li class="top-rated-list-item">Cost</li>
+                        </div>
+                        <div class="overlay">
+                        </div>
+                    </div>
+                    <div class="top-rated-item">
+                        <div class="top-rated-image">
+                        </div>
+                        <div class="top-rated-list">
+                            <li class="top-rated-list-item">Title</li>
+                            <li class="top-rated-list-item">Tier</li>
+                            <li class="top-rated-list-item">Cost</li>
+                        </div>
+                        <div class="overlay">
+                        </div>
+                    </div>
+                </div>
+                <div class="top-rated-action">
+                    <button id="loadMore" class="btn">Load More</button>
+                </div>
+                <div class="top-rated-tab-two" id="tabTwo">
+                    <div class="top-rated-item">
+                        <div class="top-rated-image">
+                        </div>
+                        <div class="top-rated-list">
+                            <li class="top-rated-list-item">Title</li>
+                            <li class="top-rated-list-item">Tier</li>
+                            <li class="top-rated-list-item">Cost</li>
+                        </div>
+                        <div class="overlay">
+                        </div>
+                    </div>
+                    <div class="top-rated-item">
+                        <div class="top-rated-image">
+                        </div>
+                        <div class="top-rated-list">
+                            <li class="top-rated-list-item">Title</li>
+                            <li class="top-rated-list-item">Tier</li>
+                            <li class="top-rated-list-item">Cost</li>
+                        </div>
+                        <div class="overlay">
+                        </div>
+                    </div>
+                    <div class="top-rated-item">
+                        <div class="top-rated-image">
+                        </div>
+                        <div class="top-rated-list">
+                            <li class="top-rated-list-item">Title</li>
+                            <li class="top-rated-list-item">Tier</li>
+                            <li class="top-rated-list-item">Cost</li>
+                        </div>
+                        <div class="overlay">
+                        </div>
+                    </div>
+                    <div class="top-rated-item">
+                        <div class="top-rated-image">
+                        </div>
+                        <div class="top-rated-list">
+                            <li class="top-rated-list-item">Title</li>
+                            <li class="top-rated-list-item">Tier</li>
+                            <li class="top-rated-list-item">Cost</li>
+                        </div>
+                        <div class="overlay">
+                        </div>
+                    </div>
+                    <div class="top-rated-item">
+                        <div class="top-rated-image">
+                        </div>
+                        <div class="top-rated-list">
+                            <li class="top-rated-list-item">Title</li>
+                            <li class="top-rated-list-item">Tier</li>
+                            <li class="top-rated-list-item">Cost</li>
+                        </div>
+                        <div class="overlay">
+                        </div>
+                    </div>
+
+                    <div class="top-rated-item">
+                        <div class="top-rated-image">
+                        </div>
+                        <div class="top-rated-list">
+                            <li class="top-rated-list-item">Title</li>
+                            <li class="top-rated-list-item">Tier</li>
+                            <li class="top-rated-list-item">Cost</li>
+                        </div>
+                        <div class="overlay">
+                        </div>
+                    </div>
+                </div>
+                <div class="top-rated-action-two">
+                    <button id="loadLess" class="btn">Load Less</button>
+                </div>
+            </div>
+        </div>
+        <!-- === SIDEBAR === -->
+        <div class="sidebar">
+            <!--best-->
+            <div class="best">
+                <div class="title">
+                    Best EU Players
+                </div>
+                <div class="best-player">
+                    <div class="player-card">
+                    </div>
+                    <div class="player-info">
+                        <div class="player-username">
+                            Username
+                        </div>
+                        <div class="player-rank">
+                            Rank
+                        </div>
+                        <div class="overlay"></div>
+                    </div>
+                </div>
+                <div class="best-player">
+                    <div class="player-card">
+                    </div>
+                    <div class="player-info">
+                        <div class="player-username">
+                            Username
+                        </div>
+                        <div class="player-rank">
+                            Rank
+                        </div>
+                        <div class="overlay"></div>
+                    </div>
+                </div>
+            </div>
+            <!--facebook feed-->
+            <div class="facebook-feed">
+                <div class="title">
+                    Facebook Feed
+                </div>
+                <div class="fb-page" data-href="https://www.facebook.com/valorantapp1" data-tabs="timeline"
+                     data-width="295" data-height="400" data-small-header="false" data-adapt-container-width="true"
+                     data-hide-cover="false" data-show-facepile="true">
+                    <blockquote cite="https://www.facebook.com/valorantapp1" class="fb-xfbml-parse-ignore"><a
+                            href="https://www.facebook.com/valorantapp1">Valorant app</a></blockquote>
+                </div>
+            </div>
+        </div>
     </div>
 </main>
+<!-- === FOOTER === -->
 <footer>
     <div class="footer">
-        <div class="footer-logo">
-            <a href="/index.html"><img src="images/main/logo.png" alt="logo"></a>
-        </div>
+        <a href="index.html"><img src="images/main/logo.png" alt="logo"></a>
         <div class="foot-menu">
             <ul class="foot-list">
+                <li class="foot-list-item"><a href="#">Top Rated</a></li>
+                <li class="foot-list-item"><a href="#">Patch Notes</a></li>
                 <li class="foot-list-item"><a href="#">Agents</a></li>
-                <li class="foot-list-item"><a href="#">Maps</a></li>
                 <li class="foot-list-item"><a href="#">Skins</a></li>
-                <li class="foot-list-item"><a href="#">Guns</a></li>
-                <li class="foot-list-item"><a href="#">News</a></li>
+                <li class="foot-list-item"><a href="#">Weapons</a></li>
             </ul>
         </div>
         <div class="foot-menu">
             <ul class="foot-list">
                 <li class="foot-list-item"><a href="#">Home</a></li>
                 <li class="foot-list-item"><a href="#">List</a></li>
-                <li class="foot-list-item"><a href="#">Custom</a></li>
+                <li class="foot-list-item"><a href="html/maps/maps.html">Maps</a></li>
                 <li class="foot-list-item"><a href="#">About Us</a></li>
                 <li class="foot-list-item"><a href="#">Contact Us</a></li>
             </ul>
@@ -85,6 +340,8 @@
     </div>
     <div class="additional-information">Developed by Ognjen Kečina & Ksenija Radulović</div>
 </footer>
-<script src="js/home-page/home-page.js"></script>
+<script src="js/home-page/home-page-slider.js"></script>
+<script src="js/home-page/navigation-menu.js"></script>
+<script src="js/home-page/home-page-top-rated.js"></script>
 </body>
 </html>
