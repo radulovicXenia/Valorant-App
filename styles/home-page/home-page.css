@@ -250,6 +250,10 @@ nav ul li a:hover {
     height: 100%;
     background-color: #FA4454;
 }
+.top-rated-image > img {
+    width: 100%;
+    height: 100%;
+}
 
 .top-rated-list {
     text-align: center;

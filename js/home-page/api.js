@@ -47,3 +47,44 @@ fetch("https://jsonblob.com/api/964178412378013696")
         }
         showUsername();
     })
+
+
+/* === SKIN BUNDLES === */
+fetch("https://jsonblob.com/api/964120260466982912")
+    .then(response => response.json())
+    .then(data => {
+        let skins = data.data;
+
+        function showTopratedSkins() {
+
+            //sorted by rating
+            let sortedByRating = skins.sort((s1,s2) => s1.rating < s2.rating ? 1 : s1.rating > s2.rating ? -1 : 0);
+            //console.log(sortedByRating);
+
+            //taking first 12 best rated
+            let bestTwelve = sortedByRating.slice(0,12);
+            console.log(bestTwelve);
+            
+            //putting the promo image into html
+            let skinPic = document.getElementsByClassName('top-rated-img');
+            for(i=0;i<skinPic.length;i++) {
+                skinPic[i].src = bestTwelve[i].verticalPromoImage;
+            }
+            //putting titles into html
+            let skinTitle = document.getElementsByClassName('skin-title');
+            for(i=0;i<skinPic.length;i++) {
+                skinTitle[i].innerHTML = bestTwelve[i].displayName;
+            }
+            //putting tiers into html
+            let skinTier = document.getElementsByClassName('tier');
+            for(i=0;i<skinTier.length;i++) {
+                skinTier[i].innerHTML = bestTwelve[i].contentTier;
+            }
+            //putting prices into html
+            let skinPrice = document.getElementsByClassName('price');
+            for(i=0;i<skinPrice.length;i++) {
+                skinPrice[i].innerHTML = bestTwelve[i].price + " VP";
+            }
+        }
+        showTopratedSkins();
+    })
