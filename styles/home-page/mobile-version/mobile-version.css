@@ -1,37 +1,66 @@
-@media only screen and (max-width: 425px) {
-    header {
-        margin-bottom: 2rem;
-    }
-
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
     .container {
         display: block;
     }
 
     .title {
         text-align: center;
+        color: #0f1923;
+        font-family: Calibri;
+        font-size: 25px;
     }
 
     .slider {
         border-radius: 0;
-        background-color: #f3f1f1;
+        background-color: #ece8e1;
         margin-bottom: 2rem;
     }
 
     .top-rated {
         border-radius: 0;
         margin-bottom: 3rem;
-        background-color: #f3f1f1;
+        background-color: #ece8e1;
+    }
+
+    .top-rated-tab {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 25px;
+    }
+
+    .top-rated-tab > .top-rated-item {
+        width: 100%;
+    }
+
+    .top-rated-tab-two.active{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 25px;
+    }
+
+    .top-rated-tab-two > .top-rated-item {
+        width: 100%;
     }
 
     .best {
         max-width: 100%;
-        background-color: #f3f1f1;
+        background-color: #ece8e1;
         border-radius: 0;
         margin-bottom: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-height: 100%;
+    }
+
+    .best-player {
+        max-width: 260px;
+        width: 100%;
     }
 
     .facebook-feed {
-        background-color: #f3f1f1;
+        background-color: #ece8e1;
         border-radius: 0;
         display: flex;
         flex-direction: column;
@@ -49,6 +78,39 @@
         font-weight: 200;
         display: block;
         margin-bottom: 1rem;
-        font-size: 1.1rem;
+        font-size: 14px;
+    }
+
+    footer img{
+        width: 72px;
+        height: 90px;
+    }
+
+    @media only screen and (max-width: 450px) {
+        .top-rated {
+            border-radius: 0;
+            margin-bottom: 3rem;
+            background-color: #ece8e1;
+        }
+
+        .top-rated-tab {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 25px;
+        }
+
+        .top-rated-tab > .top-rated-item {
+            width: 100%;
+        }
+
+        .top-rated-tab-two.active{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 25px;
+        }
+
+        .top-rated-tab-two > .top-rated-item {
+            width: 100%;
+        }
     }
 }
