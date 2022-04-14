@@ -1,0 +1,54 @@
+@media only screen and (max-width: 425px) {
+    header {
+        margin-bottom: 2rem;
+    }
+
+    .container {
+        display: block;
+    }
+
+    .title {
+        text-align: center;
+    }
+
+    .slider {
+        border-radius: 0;
+        background-color: #f3f1f1;
+        margin-bottom: 2rem;
+    }
+
+    .top-rated {
+        border-radius: 0;
+        margin-bottom: 3rem;
+        background-color: #f3f1f1;
+    }
+
+    .best {
+        max-width: 100%;
+        background-color: #f3f1f1;
+        border-radius: 0;
+        margin-bottom: 2rem;
+    }
+
+    .facebook-feed {
+        background-color: #f3f1f1;
+        border-radius: 0;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2rem;
+    }
+
+    .fb-page {
+        margin: 0 auto;
+    }
+
+    .foot-menu > .foot-list > .foot-list-item > a {
+        margin-top: 5px;
+        text-decoration: none;
+        color: white;
+        font-weight: 200;
+        display: block;
+        margin-bottom: 1rem;
+        font-size: 1.1rem;
+    }
+}
