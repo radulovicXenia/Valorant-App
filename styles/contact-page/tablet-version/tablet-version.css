@@ -50,4 +50,8 @@
     textarea {
         height: 200px;
     }
+
+    .social-list > .social-list-item > a {
+        color: #0f1923;
+    }
 }
