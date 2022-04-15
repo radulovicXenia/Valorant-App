@@ -1,29 +1,30 @@
 
-//Skins API
+//Weapons API
 
 fetch("https://valorant-api.com/v1/weapons")
     .then(response => response.json())
     .then(data => {
         let weapons = data.data;
+        console.log(weapons);
 
 
         //how to display all weapons
-        //making skin cards
+        //making weapons cards
         weapons.forEach((weapon) => {
             let card = document.createElement("div");
-            card.classList.add('card', weapon.shopData.category);
+            card.classList.add('card');
             //weapon name
             let weaponName = document.createElement("h3")
             weaponName.innerHTML = weapon.displayName;
             card.appendChild(weaponName);
-            //skin image
+            //weapon image
             let imgContainer = document.createElement("div");
             imgContainer.classList.add('image-container');
             let image = document.createElement("img");
             image.setAttribute("src", weapon.displayIcon);
             imgContainer.appendChild(image);
             card.appendChild(imgContainer);
-            //skin category
+            //weapon category
             let gunCategory = document.createElement("div");
             gunCategory.classList.add('a-category');
             let gunCategoryText = document.createElement("span");
@@ -37,9 +38,9 @@ fetch("https://valorant-api.com/v1/weapons")
             gunPriceText.innerHTML = weapon.shopData.cost;
             gunPrice.appendChild(gunPriceText);
             card.appendChild(gunPrice);
-            //add agent to html
+            //add weapon to html
             document.getElementById('weapons').appendChild(card);
-        })
+        });
 
     
-    })
+    });
