@@ -59,6 +59,10 @@
     textarea {
         height: 200px;
     }
+
+    .social-list > .social-list-item > a {
+        color: #0f1923;
+    }
 }
 
 @media only screen and (max-width: 400px) {
@@ -112,5 +116,9 @@
     footer img{
         width: 70px;
         height: 70px;
+    }
+
+    .social-list > .social-list-item > a {
+        color: #0f1923;
     }
 }
