@@ -1,0 +1,54 @@
+@media only screen and (min-width: 600px) and (max-width: 899px) {
+    .maps {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .map-block{
+        max-width: 500px;
+        width: 75%;
+        background-color: #ece8e1;
+        margin: 3rem auto 0;
+        border-radius: 0;
+    }
+
+    .map-block > .map-title {
+        color: #0f1923;
+    }
+
+    .map-block > .map-picture{
+        border-radius: 0;
+    }
+
+    .m-coor{
+        font-weight: 500;
+    }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1024px) {
+    .maps {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .map-block{
+        width: 75%;
+        background-color: #ece8e1;
+        margin: 3rem auto 0;
+        border-radius: 0;
+    }
+
+    .map-block > .map-title {
+        color: #0f1923;
+        display: block;
+    }
+
+    .map-block > .map-picture{
+        border-radius: 0;
+    }
+
+    .m-coor{
+        font-weight: 500;
+        font-size: 16px;
+    }
+}
