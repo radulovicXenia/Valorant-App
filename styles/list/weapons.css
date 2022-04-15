@@ -107,7 +107,7 @@ nav ul li a:hover {
 main {
     display: flex;
     justify-content: center;
-    padding: 0 150px;
+    padding: 0 25px;
 }
 .container {
     width: 100%;
@@ -182,7 +182,7 @@ main {
     margin-top: 2em;
     max-width: 100%;
 }
-.agents {
+.weapons {
     margin-top: 2em;
     max-width: 100%;
     display: flex;
@@ -194,8 +194,8 @@ main {
     border-radius: 10px;
     overflow: hidden;
     margin-bottom: 2em;
-    flex-basis: 40%;
-    max-height: 600px;
+    flex-basis: 45%;
+    max-height: 500px;
 }
 .card > h3 {
     width: 100%;
@@ -204,25 +204,25 @@ main {
     font-weight: bold;
 }
 .card > .image-container {
-    max-width: 100%;
+    max-height: 300px;
 }
 .card > .image-container > img {
     width: 100%;
-    height: 100%;
 }
-.a-role {
+.a-category {
     width: 100%;
     padding: 0.5em;
     text-align: center;
     color:#ece8e1;
     font-weight: bold;
 }
-.a-desc {
+.a-price {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
     width: 100%;
-    height: 100%;
     padding: 0.7em;
     color:#ece8e1;
-    text-align: justify;
 }
 
 .card:hover {

@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- === CSS === -->
-    <link rel="stylesheet" href="../../styles/list/skins.css">
+    <link rel="stylesheet" href="../../styles/list/weapons.css">
 
     <!-- === FONTS === -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,8 +37,8 @@
                             </li>
                             <div class="dropdown-content">
                                 <li><a href="../../html/list/list.html">Agents</a></li>
-                                <li><a href="#">Skins</a></li>
-                                <li><a href="../../html/list/weapons.html">Weapons</a></li>
+                                <li><a href="../../html/list/skins_list.html">Skins</a></li>
+                                <li><a href="#">Weapons</a></li>
                             </div>
                         </div>
                         <li>
@@ -58,25 +58,25 @@
     <main>
         <div class="container">
             <div class="list-title">
-                <h1>SKINS</h1>
+                <h1>WEAPONS</h1>
             </div>
 
             <div class="search-bar" id="search-bar">
-                <input type="search" id="search-input" placeholder="Search for skin">
+                <input type="search" id="search-input" placeholder="Search for weapon">
                 <button id="search-btn">Search</button>
             </div>
 
             <div class="filter-list" id="filter-list">
                 <button class="filter-btn active" id="all">All</button>
-                <button class="filter-btn" id="select">Select</button>
-                <button class="filter-btn" id="deluxe">Deluxe</button>
-                <button class="filter-btn" id="premium">Premium</button>
-                <button class="filter-btn" id="exclusive">Exclusive</button>
-                <button class="filter-btn" id="ultra">Ultra</button>
+                <button class="filter-btn" id="pistols">Pistols</button>
+                <button class="filter-btn" id="smgs">SMGs</button>
+                <button class="filter-btn" id="shotguns">Shotguns</button>
+                <button class="filter-btn" id="rifles">Rifles</button>
+                <button class="filter-btn" id="snipers">Snipers</button>
+                <button class="filter-btn" id="heavy">Heavy Machineguns</button>
             </div>
             <div class="main-content" id="main-content">
-                <div class="tier-description" id="tier-description"></div>
-                <div class="skins" id="skins"></div>
+                <div class="weapons" id="weapons"></div>
             </div>
         </div>
     </main>
@@ -106,6 +106,6 @@
         <div class="additional-information">Developed by Ognjen Kečina & Ksenija Radulović</div>
     </footer>
     <script src="../../js/home-page/navigation-menu.js"></script>
-    <script src="../../js/list/skinslist.js"></script>
+    <script src="../../js/list/weapons.js"></script>
 </body>
 </html>
