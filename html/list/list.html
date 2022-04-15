@@ -5,16 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- === CSS === -->
-    <link rel="stylesheet" href="../../styles/contact-page/contact.css">
-    <link rel="stylesheet" href="../../styles/contact-page/mobile-version/mobile-version.css">
-    <link rel="stylesheet" href="../../styles/contact-page/tablet-version/tablet-version.css">
+    <link rel="stylesheet" href="../../styles/list/list.css">
+
     <!-- === FONTS === -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <!-- === FAVICON === -->
     <link rel="shortcut icon" href="../../images/main/favicon.ico" type="image/x-icon">
-    <!-- === UNICONS === -->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <title>Valorant - Maps</title>
 </head>
 <body>
@@ -37,64 +36,50 @@
                                 <a href="#">List</a>
                             </li>
                             <div class="dropdown-content">
-                                <li><a href="../../html/list/list.html">Agents</a></li>
-                                <li><a href="../../html/list/skins_list.html">Skins</a></li>
+                                <li><a href="#">Agents</a></li>
+                                <li><a href="#">Skins</a></li>
                                 <li><a href="#">Weapons</a></li>
                             </div>
                         </div>
                         <li>
-                            <a href="../maps-page/maps.html">Maps</a>
+                            <a href="../../html/maps/maps.html">Maps</a>
                         </li>
                         <li>
                             <a href="#">About Us</a>
                         </li>
                         <li>
-                            <a href="#">Contact Us</a>
+                            <a href="../../html/contact/contact_us.html">Contact Us</a>
                         </li>
                     </ul>
             </div>
         </nav>
     </header>
+
     <main>
         <div class="container">
-            <div class="contact-title">
-                <h1>Stay in touch with us!</h1>
+            <div class="list-title">
+                <h1>AGENTS</h1>
             </div>
 
-            <div class="contact-form">
-                <form>
-                    <div class="contact-input">
-                        <label for="fname">First Name</label>
-                        <input type="text" id="fname" placeholder="John">
-                    </div>
-                    <div class="contact-input">
-                        <label for="lname">Last Name</label>
-                        <input type="text" id="lname" placeholder="Doe">
-                    </div>
-                    <div class="contact-input">
-                        <label for="email">E-mail</label>
-                        <input type="email" id="email" placeholder="valorant@gg.com">
-                    </div>
-                    <div class="contact-input">
-                        <label for="message">Type your message here!</label>
-                        <textarea id="message" cols="30" rows="10" placeholder="Your message"></textarea>
-                    </div>
-                    <div class="contact-button">
-                        <button type="submit">Submit</button>
-                    </div>
-                </form>
+            <div class="search-bar" id="search-bar">
+                <input type="search" id="search-input" placeholder="Search for agent">
+                <button id="search-btn">Search</button>
             </div>
 
-            <div class="social-media-contact">
-                <ul class="social-list">
-                    <li class="social-list-item"><a href="https://www.facebook.com/valorantapp1"><i class="uil uil-facebook"></i></a></li>
-                    <li class="social-list-item"><a href="https://www.instagram.com"><i class="uil uil-instagram"></i></a></li>
-                    <li class="social-list-item"><a href="https://www.youtube.com"><i class="uil uil-youtube"></i></a></li>
-                    <li class="social-list-item"><a href="https://twitter.com"><i class="uil uil-twitter"></i></a></li>
-                </ul>
+            <div class="filter-list" id="filter-list">
+                <button class="filter-btn active" id="all" onclick="filterAgents('all')">All</button>
+                <button class="filter-btn" id="duelist" onclick="filterAgents('duelist')">Duelist</button>
+                <button class="filter-btn" id="inititator" onclick="filterAgents('initiator')">Initiator</button>
+                <button class="filter-btn" id="sentinel" onclick="filterAgents('sentinel')">Sentinel</button>
+                <button class="filter-btn" id="controller" onclick="filterAgents('controller')">Controller</button>
+            </div>
+            <div class="main-content" id="main-content">
+                <div class="role-description" id="role-description"></div>
+                <div class="agents" id="agents"></div>
             </div>
         </div>
     </main>
+
     <footer>
         <div class="footer">
             <a href="../../index.html"><img src="../../images/main/logo.png" alt="logo"></a>
@@ -111,14 +96,15 @@
                 <ul class="foot-list">
                     <li class="foot-list-item"><a href="../../index.html">Home</a></li>
                     <li class="foot-list-item"><a href="#">List</a></li>
-                    <li class="foot-list-item"><a href="../maps-page/maps.html">Maps</a></li>
+                    <li class="foot-list-item"><a href="../../html/maps/maps.html">Maps</a></li>
                     <li class="foot-list-item"><a href="#">About Us</a></li>
-                    <li class="foot-list-item"><a href="#">Contact Us</a></li>
+                    <li class="foot-list-item"><a href="../../html/contact/contact_us.html">Contact Us</a></li>
                 </ul>
             </div>
         </div>
         <div class="additional-information">Developed by Ognjen Kečina & Ksenija Radulović</div>
     </footer>
     <script src="../../js/home-page/navigation-menu.js"></script>
+    <script src="../../js/list/agentlist.js"></script>
 </body>
 </html>

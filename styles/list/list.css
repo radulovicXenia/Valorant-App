@@ -107,68 +107,36 @@ nav ul li a:hover {
 main {
     display: flex;
     justify-content: center;
+    padding: 0 150px;
 }
 .container {
+    width: 100%;
     background-color: rgba(0, 0, 0, 0.349);
-    height: min-content;
-    width: 700px;
+    padding: 35px;
     border-radius: 10px;
-}
-.contact-title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.contact-title > h1 {
-    font-size: 40px;
-    color: #FA4454;
-}
 
-.contact-form {
+}
+.list-title {
+    color:#FA4454;
+}
+.list-title > h1 {
+    margin-top: 0;
+}
+.search-bar {
     display: flex;
     justify-content: center;
-    align-items: center;
 }
-.contact-form > form {
-    width: 60%;
-    display: block;
-}
-.contact-input {
-    padding: 20px;
-    color: #FA4454;
-    font-weight: bold;
-    font-size: larger;
-}
-input {
-    background-color: #0f1922;
-    color: aliceblue;
-    display: block;
-    margin-top: 10px;
-    padding: 15px;
-    width: 100%;
+.search-bar > input {
     outline: 0;
-    font-size: large;
-    border: none;
-    border-radius: 5px;
-}
-textarea {
-    background-color: #0f1922;
-    color: aliceblue;
-    display: block;
-    outline: 0;
-    margin-top: 10px;
-    padding: 15px;
-    width: 100%;
     border: 0;
+    padding: 10px;
     border-radius: 5px;
+    margin-right: 1em;
+    background-color: #162635a9;
+    color: white;
     font-size: large;
 }
-.contact-button {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-}
-button {
+.search-bar > button {
     font-family: 'Kanit', sans-serif;
     background-color:#FA4454;
     color:#0f1922;
@@ -176,41 +144,103 @@ button {
     font-weight: bold;
     border: none;
     border-radius: 5px;
-    padding: 20px;
-    margin: 20px 0;
+    padding: 10px;
     cursor: pointer;
 }
-button:hover {
-    background-color:#952932;
-    color: white;
-    transition: 0.4s ease;
-}
 
-/*=== SOCIALS ===*/
-
-.social-media-contact {
-    width: 100%;
+.filter-list {
+    margin-top: 2em;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
-.social-list {
-    list-style-type: none;
-    display: inline-flex;
-    padding: 0;
+.filter-btn {
+    margin-right: 1em;
+    font-family: 'Kanit', sans-serif;
+    background-color: transparent;
+    color:white;
+    font-size: medium;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
 }
-.social-list > .social-list-item {
-    height: 40px;
-    width: 40px;
+.filter-btn:hover {
+    background-color: #FA4454;
+    color: #0f1922;
+    transition: 0.4s ease;
+}
+.active {
+    background-color: #FA4454;
+    color: #0f1922;
+}
+.hide {
+    display: none;
+}
+.main-content {
+    margin-top: 2em;
+    max-width: 100%;
+}
+.agents {
+    margin-top: 2em;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.card {
+    background-color: #ece8e1;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 2em;
+    flex-basis: 40%;
+    max-height: 600px;
+}
+.card > h3 {
+    width: 100%;
+    color: #0f1922;
     text-align: center;
-    margin: 0 5px;
+    font-weight: bold;
 }
-.social-list > .social-list-item > a {
-    font-size: 30px;
-    color: #FA4454;
+.card > .image-container {
+    max-width: 100%;
 }
-.social-list > .social-list-item > a:hover {
-    color: white;
+.card > .image-container > img {
+    width: 100%;
+    height: 100%;
 }
+.a-role {
+    width: 100%;
+    padding: 0.5em;
+    text-align: center;
+    color:#0f1922;
+    font-weight: bold;
+}
+.a-desc {
+    width: 100%;
+    height: 100%;
+    padding: 0.7em;
+    color:#0f1922;
+    text-align: justify;
+}
+
+.card:hover {
+    background-color: #FA4454;
+    transition: all 0.4s ease;
+}
+.card:hover > h3 {
+    color: #ece8e1;
+}
+.card:hover > .a-role {
+    color: #ece8e1;
+}
+.card:hover > .a-desc {
+    color: #ece8e1;
+}
+
+
+
 
 /* === FOOTER === */
 
