@@ -1,0 +1,53 @@
+@media only screen and (max-width: 1024px) and (min-width: 400px) {
+    .container {
+        background-color: #ece8e1;
+        border-radius: 0;
+        margin-top: 2rem;
+        width: 80%;
+    }
+
+    .contact-title > h1 {
+        color: #0f1923;
+        font-size: 30px;
+        margin-top: 2rem;
+    }
+
+    .contact-input {
+        color: #0f1923;
+        padding: 15px;
+    }
+
+    .contact-form > form {
+        width: 100%;
+        padding: 0 15px;
+        max-width: 350px;
+    }
+
+    input {
+        padding: 10px 10px;
+    }
+
+    input::placeholder, textarea::placeholder {
+        color: white;
+        font-size: 17px;
+    }
+
+    .contact-button {
+        padding: 0;
+    }
+
+    .contact-button button {
+        padding: 12px 23px;
+        color: white;
+        font-weight: 500;
+    }
+
+    .additional-information {
+        color: white;
+        margin-top: 2rem;
+    }
+
+    textarea {
+        height: 200px;
+    }
+}
