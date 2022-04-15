@@ -193,6 +193,10 @@
         font-size: 16px;
     }
 
+    .player-username{
+        font-weight: 500;
+    }
+
     .facebook-feed{
         height: 650px;
     }
