@@ -7,7 +7,6 @@
     .title {
         text-align: center;
         color: #0f1923;
-        font-family: Calibri;
         font-size: 25px;
     }
 
@@ -32,6 +31,7 @@
     .top-rated-tab > .top-rated-item {
         width: 100%;
         max-width: 250px;
+        background-color: #0f1923;
     }
 
     .top-rated-tab-two.active{
@@ -42,6 +42,8 @@
 
     .top-rated-tab-two > .top-rated-item {
         width: 100%;
+        max-width: 250px;
+        background-color: #0f1923;
     }
 
     .best {
@@ -58,6 +60,17 @@
     .best-player {
         max-width: 260px;
         width: 100%;
+    }
+
+    .best-player > .player-info {
+        background-color: #0f1923;
+    }
+
+    .top-rated-action > .btn, .top-rated-action-two > .btn {
+        background-color: #0f1923;
+        color: white;
+        padding: 11px;
+        font-size: 16px;
     }
 
     .facebook-feed {
@@ -80,6 +93,12 @@
         display: block;
         margin-bottom: 1rem;
         font-size: 1.1rem;
+    }
+
+    .additional-information {
+        margin-top: 3rem;
+        color: white;
+        font-size: 17px;
     }
 }
 
@@ -149,16 +168,11 @@
         background-color: #0f1922;
     }
 
-    .top-rated-action > .btn{
-        padding: 16px 30px;
+    .top-rated-action > .btn, .top-rated-action-two > .btn {
+        background-color: #0f1923;
         color: white;
-        font-size: 17px;
-    }
-
-    .top-rated-action-two > .btn {
-        padding: 16px 30px;
-        color: white;
-        font-size: 17px;
+        padding: 11px;
+        font-size: 16px;
     }
 
     .sidebar{
