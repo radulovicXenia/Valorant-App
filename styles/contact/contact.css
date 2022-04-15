@@ -185,6 +185,33 @@ button:hover {
     color: white;
     transition: 0.4s ease;
 }
+
+/*=== SOCIALS ===*/
+
+.social-media-contact {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.social-list {
+    list-style-type: none;
+    display: inline-flex;
+    padding: 0;
+}
+.social-list > .social-list-item {
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    margin: 0 5px;
+}
+.social-list > .social-list-item > a {
+    font-size: 30px;
+    color: #FA4454;
+}
+.social-list > .social-list-item > a:hover {
+    color: white;
+}
+
 /* === FOOTER === */
 
 .footer {
