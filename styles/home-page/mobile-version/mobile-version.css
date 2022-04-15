@@ -25,6 +25,10 @@
         color: white;
     }
 
+    .patchNote{
+        top: 10%;
+    }
+
     .top-rated {
         border-radius: 0;
         margin-bottom: 3rem;
@@ -60,16 +64,11 @@
         background-color: #0f1922;
     }
 
-    .top-rated-action > .btn{
-        padding: 16px 30px;
+    .top-rated-action > .btn, .top-rated-action-two > .btn {
+        background-color: #0f1923;
         color: white;
-        font-size: 17px;
-    }
-
-    .top-rated-action-two > .btn {
-        padding: 16px 30px;
-        color: white;
-        font-size: 17px;
+        padding: 11px;
+        font-size: 16px;
     }
 
     .best {
@@ -93,6 +92,7 @@
         color: white;
         font-family: Calibri;
         font-size: 16px;
+        font-weight: 500;
     }
 
     .facebook-feed {

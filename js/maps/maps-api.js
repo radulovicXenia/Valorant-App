@@ -1,4 +1,4 @@
-//valorant api with maps information
+//valorant api with maps-page-page information
 fetch("https://valorant-api.com/v1/maps")
     .then(response => response.json())
     .then(data => {
