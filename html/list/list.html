@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- === CSS === -->
-    <link rel="stylesheet" href="../../styles/contact/contact.css">
+    <link rel="stylesheet" href="../../styles/list/list.css">
 
     <!-- === FONTS === -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -57,6 +57,26 @@
 
     <main>
         <div class="container">
+            <div class="list-title">
+                <h1>AGENTS</h1>
+            </div>
+
+            <div class="search-bar" id="search-bar">
+                <input type="search" id="search-input" placeholder="Search for agent">
+                <button id="search-btn">Search</button>
+            </div>
+
+            <div class="filter-list" id="filter-list">
+                <button class="filter-btn active" id="all" onclick="filterAgents('all')">All</button>
+                <button class="filter-btn" id="duelist" onclick="filterAgents('duelist')">Duelist</button>
+                <button class="filter-btn" id="inititator" onclick="filterAgents('initiator')">Initiator</button>
+                <button class="filter-btn" id="sentinel" onclick="filterAgents('sentinel')">Sentinel</button>
+                <button class="filter-btn" id="controller" onclick="filterAgents('controller')">Controller</button>
+            </div>
+            <div class="main-content" id="main-content">
+                <div class="role-description" id="role-description"></div>
+                <div class="agents" id="agents"></div>
+            </div>
         </div>
     </main>
 
@@ -85,5 +105,6 @@
         <div class="additional-information">Developed by Ognjen Kečina & Ksenija Radulović</div>
     </footer>
     <script src="../../js/home-page/navigation-menu.js"></script>
+    <script src="../../js/list/agentlist.js"></script>
 </body>
 </html>
