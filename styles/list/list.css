@@ -190,7 +190,7 @@ main {
     justify-content: space-around;
 }
 .card {
-    background-color: #ece8e1;
+    background-color: #0f1922;
     border-radius: 10px;
     overflow: hidden;
     margin-bottom: 2em;
@@ -199,7 +199,7 @@ main {
 }
 .card > h3 {
     width: 100%;
-    color: #0f1922;
+    color: #ece8e1;
     text-align: center;
     font-weight: bold;
 }
@@ -214,14 +214,14 @@ main {
     width: 100%;
     padding: 0.5em;
     text-align: center;
-    color:#0f1922;
+    color:#ece8e1;
     font-weight: bold;
 }
 .a-desc {
     width: 100%;
     height: 100%;
     padding: 0.7em;
-    color:#0f1922;
+    color:#ece8e1;
     text-align: justify;
 }
 
