@@ -1,0 +1,80 @@
+@media only screen and (max-width: 1024px) {
+    .container {
+        background-color: #ece8e1;
+        border-radius: 0;
+    }
+    .about-us-title h1{
+        color: #0f1923;
+    }
+
+    .foot-menu > .foot-list > .foot-list-item > a {
+        font-size: 17px;
+    }
+
+    .additional-information {
+        font-size: 15px;
+        color: white;
+    }
+
+    .defy-the-limits h3{
+        color: #0f1923;
+        font-size: 22px;
+    }
+
+    .agents-creativity p{
+        color: #0f1923;
+    }
+
+    .learn-the-game p {
+        color: #0f1923;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        background-color: #ece8e1;
+        border-radius: 0;
+    }
+    .about-us-title h1{
+        color: #0f1923;
+    }
+
+    .defy-the-limits h3{
+        color: #0f1923;
+        text-align: center;
+        font-size: 22px;
+    }
+
+    .defy-learn-game{
+        display: block;
+    }
+
+    .learn-the-game{
+        width: 100%;
+        color: #0f1923;
+    }
+
+    .creativity {
+        color: #0f1923;
+    }
+
+
+    .defy-gameplay video{
+     width: 100%;
+    }
+
+    .agents-creativity{
+        color: #0f1923;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .foot-menu > .foot-list > .foot-list-item > a {
+        font-size: 15px;
+    }
+
+    footer img{
+        width: 70px;
+        height: 70px;
+    }
+}
