@@ -15,7 +15,7 @@ fetch("https://valorant-api.com/v1/agents")
                 agentsNoduplicate.push(agent);
             }
         })
-        console.log(agentsNoduplicate);
+        //console.log(agentsNoduplicate);
 
         //function to display all agents
         //making agent cards
@@ -51,18 +51,92 @@ fetch("https://valorant-api.com/v1/agents")
             document.getElementById('agents').appendChild(card);
         })
 
-        /*function filterAgents(keyword) {
+        document.getElementById('all').addEventListener("click", function() {
+            filterAll();
+        })
 
-            //it should remove 'hide' class from the agent card so that it only shows agents with the keyword
-            let elements = document.getElementsByClassName('card');
+        document.getElementById('duelist').addEventListener("click", function() {
+            filterDuelists();
+        })
+
+        document.getElementById('inititator').addEventListener("click", function() {
+            filterInitiators();
+        })
+
+        document.getElementById('sentinel').addEventListener("click", function() {
+            filterSentinels();
+        })
+
+        document.getElementById('controller').addEventListener("click", function() {
+            filterControllers();
+        })
+
+        //show all agents
+        function filterAll() {
+            let elements = document.querySelectorAll(".card");
             elements.forEach(element => {
-                if(element.classList.contains(keyword)) {
+                element.classList.remove('hide');
+            })
+        }
+
+        //filter duelists
+        function filterDuelists() {
+
+            //takng all agents
+            let elements = document.querySelectorAll(".card");
+            console.log(elements);
+            //displaying only duelists and iding all other agents
+            elements.forEach(element => {
+                if(element.classList.contains("Duelist")) {
                     element.classList.remove('hide');
                 }else {
                     element.classList.add('hide');
                 }
-            });
+            })
         };
-        filterAgents('Duelists');*/
+
+         //filter initiators
+         function filterInitiators() {
+
+            let elements = document.querySelectorAll(".card");
+            console.log(elements);
     
+            elements.forEach(element => {
+                if(element.classList.contains("Initiator")) {
+                    element.classList.remove('hide');
+                }else {
+                    element.classList.add('hide');
+                }
+            })
+        };
+
+         //filter Sentinels
+         function filterSentinels() {
+
+            let elements = document.querySelectorAll(".card");
+            console.log(elements);
+    
+            elements.forEach(element => {
+                if(element.classList.contains("Sentinel")) {
+                    element.classList.remove('hide');
+                }else {
+                    element.classList.add('hide');
+                }
+            })
+        };
+
+         //filter controllers
+         function filterControllers() {
+
+            let elements = document.querySelectorAll(".card");
+            console.log(elements);
+    
+            elements.forEach(element => {
+                if(element.classList.contains("Controller")) {
+                    element.classList.remove('hide');
+                }else {
+                    element.classList.add('hide');
+                }
+            })
+        };
     })
