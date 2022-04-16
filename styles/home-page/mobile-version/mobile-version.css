@@ -140,6 +140,10 @@
             border-radius: 0;
         }
 
+        .slider > .slider-tab > .slider-tab-action > button {
+            padding: 10px;
+        }
+
         .top-rated {
             border-radius: 0;
             margin-bottom: 3rem;
@@ -183,9 +187,16 @@
         .footer{
             justify-content: space-evenly;
         }
+
+        .slider > .slider-tab > img{
+            height: 300px;
+        }
     }
 
     @media only screen and (max-width: 375px) {
+        .slider {
+            height: 100%;
+        }
         .slider > .slider-tab > .slider-tab-text{
             top: 16%;
             font-size: 15px;
@@ -194,11 +205,15 @@
 
         .slider > .slider-tab > img{
             width: 300px;
-            height: 300px;
+            height: 250px;
         }
 
         .slider > .slider-tab{
             height: auto;
+        }
+
+        .slider > .slider-tab > .slider-tab-action > button {
+            padding: 10px;
         }
 
         .foot-menu > .foot-list > .foot-list-item > a {
