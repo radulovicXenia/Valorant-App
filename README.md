@@ -10,4 +10,5 @@ List of APIs used:
 
 Developed by Ognjen Kecina and Ksenija Radulovic  
 
-The app is hosted at https://radulovicksenija.github.io/Valorant-App/
+The app is hosted using github pages.  
+- Live Demo: https://radulovicksenija.github.io/Valorant-App/
