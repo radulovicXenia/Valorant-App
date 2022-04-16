@@ -92,4 +92,11 @@
         padding: 0 100px;
     }
 
+    .skins{
+        display: block;
+    }
+
+    .weapons{
+        display: block;
+    }
 }
