@@ -1,0 +1,91 @@
+@media only screen and (max-width: 1024px) {
+    .container {
+        background-color: #ece8e1;
+        border-radius: 0;
+    }
+
+    .list-title {
+        color: #0f1923;
+    }
+
+    .card{
+        border-radius: 0;
+    }
+
+    .search-bar > button {
+        color: white;
+        background-color:   #FA4454;
+        font-weight: 500;
+    }
+    .search-bar > input {
+        background-color: #292a2b;
+    }
+
+    .search-bar > input::placeholder{
+        color: white;
+        font-size: 17px;
+    }
+
+    .filter-btn {
+        color: #0f1922;
+    }
+
+    .active{
+        background-color: #0f1922;
+        color: white;
+    }
+
+    .search-bar, .filter-list {
+        justify-content: normal;
+    }
+}
+
+@media only screen and (max-width: 920px) {
+    .agents{
+        display: block;
+    }
+
+    .card{
+        max-height: 100%;
+    }
+
+    .search-bar, .filter-list {
+        justify-content: normal;
+    }
+}
+
+@media only screen and (max-width: 825px) {
+    .search-bar, .filter-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search-bar > button {
+        margin-top: 2rem;
+        background-color: #FA4454;
+        padding: 10px 25px;
+    }
+
+    .search-bar > input{
+        text-align: center;
+
+    }
+
+    .filter-list {
+        align-items: center;
+    }
+
+    .list-title{
+        text-align: center;
+    }
+
+    .filter-btn {
+        margin-bottom: 1rem;
+        padding: 10px 25px;
+    }
+
+    main{
+        padding: 0;
+    }
+
+}
