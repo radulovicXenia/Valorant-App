@@ -1,6 +1,6 @@
 
 //Agents API
-const filterBtns = document.getElementsByClassName('filter-btn');
+let filterBtns = document.getElementsByClassName('filter-btn');
 
 fetch("https://valorant-api.com/v1/agents")
     .then(response => response.json())
@@ -50,24 +50,47 @@ fetch("https://valorant-api.com/v1/agents")
             //add agent to html
             document.getElementById('agents').appendChild(card);
         })
-
+        //on button click. filter agents
         document.getElementById('all').addEventListener("click", function() {
+            //remove active class from all buttons
+            for(i=0; i<filterBtns.length;i++) {
+                filterBtns[i].classList.remove('active');
+            }
+            //add active class to the curent filter button
+            document.getElementById('all').classList.add('active');
+            //filter agents
             filterAll();
         })
 
         document.getElementById('duelist').addEventListener("click", function() {
+            for(i=0; i<filterBtns.length;i++) {
+                filterBtns[i].classList.remove('active');
+            }
+            document.getElementById('duelist').classList.add('active');
             filterDuelists();
         })
 
-        document.getElementById('inititator').addEventListener("click", function() {
+        document.getElementById('initiator').addEventListener("click", function() {
+            for(i=0; i<filterBtns.length;i++) {
+                filterBtns[i].classList.remove('active');
+            }
+            document.getElementById('initiator').classList.add('active');
             filterInitiators();
         })
 
         document.getElementById('sentinel').addEventListener("click", function() {
+            for(i=0; i<filterBtns.length;i++) {
+                filterBtns[i].classList.remove('active');
+            }
+            document.getElementById('sentinel').classList.add('active');
             filterSentinels();
         })
 
         document.getElementById('controller').addEventListener("click", function() {
+            for(i=0; i<filterBtns.length;i++) {
+                filterBtns[i].classList.remove('active');
+            }
+            document.getElementById('controller').classList.add('active');
             filterControllers();
         })
 
