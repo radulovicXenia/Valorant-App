@@ -116,13 +116,15 @@ main {
 
 }
 .list-title {
+    width: 100%;
+    text-align: center;
     color:#FA4454;
 }
 .list-title > h1 {
     margin-top: 0;
 }
 .search-bar {
-    display: flex;
+    display: none;
     justify-content: center;
 }
 .search-bar > input {
@@ -203,10 +205,14 @@ main {
     font-weight: bold;
 }
 .card > .image-container {
-    max-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
 }
 .card > .image-container > img {
-    width: 100%;
+    max-height: 100%;
+    max-width: 100%;
 }
 .a-category {
     width: 100%;
