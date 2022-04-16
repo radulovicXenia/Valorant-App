@@ -1,5 +1,6 @@
 //this is where we pull info from
 
+
 /* === PATCH NOTES API === */
 fetch("https://jsonblob.com/api/964114737269063680")
     .then(response => response.json())
@@ -8,6 +9,12 @@ fetch("https://jsonblob.com/api/964114737269063680")
         //console.log(patchNotes);
 
         function showSliderInfo() {
+            let readMore = document.querySelectorAll("#read-more");
+            let modalClose = document.querySelector("#close");
+            let modalWindow = document.querySelector("#modal-container");
+            let modalTitle = document.getElementsByClassName("modal-title");
+            let modalImage = document.getElementById("mod-img");
+            let modaltext = document.getElementsByClassName("modal-text"); 
 
             //sort patch notes by date
             let sortedbyDate = patchNotes.sort((a,b) => Date.parse(b.date) - Date.parse(a.date));
@@ -23,8 +30,22 @@ fetch("https://jsonblob.com/api/964114737269063680")
             for (i=0; i< sliderImages.length; i++) {
                 sliderImages[i].src = sortedbyDate[i].cover;
             }
+            
+            /*for(i=0;i<readMore.length;i++) {
+                readMore[i].addEventListener("click", function() {
+                    modalWindow.classList.add("show");
+                    modalTitle[i].innerHTML = sortedbyDate[i].title;
+                    modalImage[i].src = sortedbyDate[i].cover;
+                });
+            };
+
+            modalClose.addEventListener("click", function() {
+                modalWindow.classList.remove("show");
+            });*/
         }
         showSliderInfo();
+
+
     })
 
 /* === LEADERBOARD API === */

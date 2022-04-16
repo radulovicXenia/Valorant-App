@@ -6,6 +6,7 @@ const totalSlides = slides.length;
 
 
 document.getElementById('btn_next').addEventListener("click", function() {
+    clearTimeout(auto);
     moveToNextSlide();
 });
 
@@ -21,11 +22,13 @@ document.body.onkeydown = function(e) {
         moveToPrevSlide();
         break;
         case 39: // 39 is code for right arrow
+        clearTimeout(auto);
         moveToNextSlide();
         break;
     }
 };
 
+var auto;
 
 function updateSlidePosition() {
     for (let slide of slides) {
@@ -43,7 +46,7 @@ function moveToNextSlide() {
     } else {
         slidePosition++;
     }
-    setTimeout(moveToNextSlide, 3000);
+    auto = setTimeout(moveToNextSlide, 3000);
 };
 moveToNextSlide();
 
