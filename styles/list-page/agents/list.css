@@ -94,7 +94,6 @@ nav ul li a:hover {
     position: absolute;
     background: white;
     min-width: 160px;
-    height: 20vh;
     z-index: 1;
     border-radius: 0.3rem;
 }
