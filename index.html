@@ -78,7 +78,7 @@
                         <h1 class="patchNote"></h1>
                     </div>
                     <div class="slider-tab-action">
-                        <button>Read more</button>
+                        <button id="read-more">Read more</button>
                     </div>
                 </div>
 
@@ -88,7 +88,7 @@
                         <h1 class="patchNote"></h1>
                     </div>
                     <div class="slider-tab-action">
-                        <button>Read more</button>
+                        <button id="read-more">Read more</button>
                     </div>
                 </div>
 
@@ -98,7 +98,7 @@
                         <h1 class="patchNote"></h1>
                     </div>
                     <div class="slider-tab-action">
-                        <button>Read more</button>
+                        <button id="read-more">Read more</button>
                     </div>
                 </div>
                 <div class="slider-actions">
@@ -332,6 +332,19 @@
             </div>
         </div>
     </div>
+
+    <div class="modal-container" id="modal-container">
+        <div class="modal-content">
+            <div class="modal-title" id="modal-title">Title</div>
+            <div class="modal-image" id="modal-image">
+                <img id="mod-img" src="" alt="img">
+            </div>
+            <div class="modal-text" id="modal-text">some content</div>
+            <div class="modal-button">
+            <button id="close">X</button>
+        </div>
+        </div>
+    </div>
 </main>
 <!-- === FOOTER === -->
 <footer>
@@ -358,6 +371,7 @@
     </div>
     <div class="additional-information">Developed by Ognjen Kečina & Ksenija Radulović</div>
 </footer>
+<script src="js/home-page/modals.js"></script>
 <script src="js/home-page/home-page-slider.js"></script>
 <script src="js/home-page/navigation-menu.js"></script>
 <script src="js/home-page/home-page-top-rated.js"></script>

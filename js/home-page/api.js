@@ -1,11 +1,19 @@
 //this is where we pull info from
 
+
 /* === PATCH NOTES API === */
 fetch("https://jsonblob.com/api/964114737269063680")
     .then(response => response.json())
     .then(data => {
         let patchNotes = data.data;
         //console.log(patchNotes);
+
+        let readMore = document.querySelectorAll("#read-more");
+        let modalClose = document.querySelector("#close");
+        let modalWindow = document.querySelector("#modal-container");
+        let modalTitle = document.getElementsByClassName("modal-title");
+        let modalImage = document.getElementById("mod-img");
+        let modaltext = document.getElementsByClassName("modal-text");  
 
         function showSliderInfo() {
 
@@ -25,6 +33,20 @@ fetch("https://jsonblob.com/api/964114737269063680")
             }
         }
         showSliderInfo();
+
+        /*for(i=0;i<readMore.length;i++) {
+            readMore[i].addEventListener("click", function() {
+                modalWindow.classList.add("show");
+                modalTitle[i].innerHTML = sortedbyDate[i].title;
+                modalImage[i].src = sortedbyDate[i].cover;
+            });
+        };
+
+        modalClose.addEventListener("click", function() {
+            modalWindow.classList.remove("show");
+        });*/
+
+
     })
 
 /* === LEADERBOARD API === */
