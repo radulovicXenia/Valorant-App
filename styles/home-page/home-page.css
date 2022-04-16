@@ -201,6 +201,7 @@ nav ul li a:hover, .active-li-item {
     justify-content: space-between;
     align-items: center;
     position: absolute;
+    outline: 0;
     top: 50%;
     transform: translateY(-50%);
 }
