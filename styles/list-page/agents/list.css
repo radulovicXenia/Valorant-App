@@ -116,6 +116,8 @@ main {
 
 }
 .list-title {
+    width: 100%;
+    text-align: center;
     color:#FA4454;
 }
 .list-title > h1 {
