@@ -3,7 +3,6 @@ fetch("https://valorant-api.com/v1/maps")
     .then(response => response.json())
     .then(data => {
         let maps = data.data;
-        console.log(maps);
 
 
         function showMaps() {
