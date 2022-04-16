@@ -1,6 +1,6 @@
 
 //Agents API
-const filterBtns = document.getElementsByClassName('filter-btn');
+let filterBtns = document.getElementsByClassName('filter-btn');
 
 fetch("https://valorant-api.com/v1/agents")
     .then(response => response.json())
@@ -15,7 +15,7 @@ fetch("https://valorant-api.com/v1/agents")
                 agentsNoduplicate.push(agent);
             }
         })
-        console.log(agentsNoduplicate);
+        //console.log(agentsNoduplicate);
 
         //function to display all agents
         //making agent cards
@@ -50,19 +50,116 @@ fetch("https://valorant-api.com/v1/agents")
             //add agent to html
             document.getElementById('agents').appendChild(card);
         })
+        //on button click. filter agents
+        document.getElementById('all').addEventListener("click", function() {
+            //remove active class from all buttons
+            for(i=0; i<filterBtns.length;i++) {
+                filterBtns[i].classList.remove('active');
+            }
+            //add active class to the curent filter button
+            document.getElementById('all').classList.add('active');
+            //filter agents
+            filterAll();
+        })
 
-        /*function filterAgents(keyword) {
+        document.getElementById('duelist').addEventListener("click", function() {
+            for(i=0; i<filterBtns.length;i++) {
+                filterBtns[i].classList.remove('active');
+            }
+            document.getElementById('duelist').classList.add('active');
+            filterDuelists();
+        })
 
-            //it should remove 'hide' class from the agent card so that it only shows agents with the keyword
-            let elements = document.getElementsByClassName('card');
+        document.getElementById('initiator').addEventListener("click", function() {
+            for(i=0; i<filterBtns.length;i++) {
+                filterBtns[i].classList.remove('active');
+            }
+            document.getElementById('initiator').classList.add('active');
+            filterInitiators();
+        })
+
+        document.getElementById('sentinel').addEventListener("click", function() {
+            for(i=0; i<filterBtns.length;i++) {
+                filterBtns[i].classList.remove('active');
+            }
+            document.getElementById('sentinel').classList.add('active');
+            filterSentinels();
+        })
+
+        document.getElementById('controller').addEventListener("click", function() {
+            for(i=0; i<filterBtns.length;i++) {
+                filterBtns[i].classList.remove('active');
+            }
+            document.getElementById('controller').classList.add('active');
+            filterControllers();
+        })
+
+        //show all agents
+        function filterAll() {
+            let elements = document.querySelectorAll(".card");
             elements.forEach(element => {
-                if(element.classList.contains(keyword)) {
+                element.classList.remove('hide');
+            })
+        }
+
+        //filter duelists
+        function filterDuelists() {
+
+            //takng all agents
+            let elements = document.querySelectorAll(".card");
+            console.log(elements);
+            //displaying only duelists and iding all other agents
+            elements.forEach(element => {
+                if(element.classList.contains("Duelist")) {
                     element.classList.remove('hide');
                 }else {
                     element.classList.add('hide');
                 }
-            });
+            })
         };
-        filterAgents('Duelists');*/
+
+         //filter initiators
+         function filterInitiators() {
+
+            let elements = document.querySelectorAll(".card");
+            console.log(elements);
     
+            elements.forEach(element => {
+                if(element.classList.contains("Initiator")) {
+                    element.classList.remove('hide');
+                }else {
+                    element.classList.add('hide');
+                }
+            })
+        };
+
+         //filter Sentinels
+         function filterSentinels() {
+
+            let elements = document.querySelectorAll(".card");
+            console.log(elements);
+    
+            elements.forEach(element => {
+                if(element.classList.contains("Sentinel")) {
+                    element.classList.remove('hide');
+                }else {
+                    element.classList.add('hide');
+                }
+            })
+        };
+
+         //filter controllers
+         function filterControllers() {
+
+            let elements = document.querySelectorAll(".card");
+            console.log(elements);
+    
+            elements.forEach(element => {
+                if(element.classList.contains("Controller")) {
+                    element.classList.remove('hide');
+                }else {
+                    element.classList.add('hide');
+                }
+            })
+        };
     })

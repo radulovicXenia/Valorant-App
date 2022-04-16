@@ -116,13 +116,15 @@ main {
 
 }
 .list-title {
+    width: 100%;
+    text-align: center;
     color:#FA4454;
 }
 .list-title > h1 {
     margin-top: 0;
 }
 .search-bar {
-    display: flex;
+    display: none;
     justify-content: center;
 }
 .search-bar > input {
