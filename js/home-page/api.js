@@ -82,6 +82,8 @@ fetch("https://jsonblob.com/api/964178412378013696")
 
         function showBestPlayerModal() {
 
+            let threeBestPlayers = players.slice(0,3);
+
             let bestPlayers = document.querySelectorAll(".best-player");
             let bpModalclose = document.querySelector("#bp-close");
             let bpModalWindow = document.querySelector("#best-player-modal");
