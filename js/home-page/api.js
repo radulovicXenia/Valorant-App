@@ -32,7 +32,8 @@ fetch("https://jsonblob.com/api/964114737269063680")
             for (let i=0; i< sliderImages.length; i++) {
                 sliderImages[i].src = sortedbyDate[i].cover;
             }
-            
+
+            //modal window
             for(let i=0;i<readMore.length;i++) {
                 readMore[i].addEventListener("click", function() {
                     modalWindow.classList.add("show");
@@ -44,7 +45,7 @@ fetch("https://jsonblob.com/api/964114737269063680")
                     modalLink.href = sortedbyDate[i].link;
                 });
             };
-
+            //close modal window
             modalClose.addEventListener("click", function() {
                 modalWindow.classList.remove("show");
             });
@@ -65,12 +66,33 @@ fetch("https://jsonblob.com/api/964178412378013696")
 
         function showUsername() {
 
+            let bestPlayers = document.querySelectorAll(".best-player");
+            let bpModalclose = document.querySelector("#bp-close");
+            let bpModalWindow = document.querySelector("#best-player-modal");
+            let bpModalUser = document.querySelector("#uname-span");
+            let bpModalTag = document.querySelector("#tag-span");
+            let bpModalRank = document.querySelector("#rank-span");
+            let bpModalWins = document.querySelector("#win-span");
+
             let threeBestPlayers = players.slice(0,3);
 
             let playerUsername = document.getElementsByClassName('pl-username');
             for(i=0;i<playerUsername.length;i++) {
                 playerUsername[i].innerHTML = threeBestPlayers[i].gameName + " #" + threeBestPlayers[i].tagLine;
             }
+
+            for(let i=0;i<bestPlayers.length;i++) {
+                bestPlayers[i].addEventListener("click", function() {
+                    bpModalWindow.classList.add("show");
+                    bpModalUser.innerHTML = threeBestPlayers[i].gameName;
+                    bpModalTag.innerHTML = "#" + threeBestPlayers[i].tagLine;
+                    bpModalRank.innerHTML = threeBestPlayers[i].rankedRating;
+                    bpModalWins.innerHTML = threeBestPlayers[i].numberOfWins;
+                });
+            }
+            bpModalclose.addEventListener("click", function() {
+                bpModalWindow.classList.remove("show");
+            });
         }
         showUsername();
     })
@@ -84,33 +106,34 @@ fetch("https://jsonblob.com/api/964120260466982912")
 
         function showTopratedSkins() {
 
+
             //sorted by rating
             let sortedByRating = skins.sort((s1,s2) => s1.rating < s2.rating ? 1 : s1.rating > s2.rating ? -1 : 0);
             //console.log(sortedByRating);
 
             //taking first 12 best rated
             let bestTwelve = sortedByRating.slice(0,12);
-            console.log(bestTwelve);
+            //console.log(bestTwelve);
             
             //putting the promo image into html
             let skinPic = document.getElementsByClassName('top-rated-img');
-            for(i=0;i<skinPic.length;i++) {
+            for(let i=0;i<skinPic.length;i++) {
                 skinPic[i].src = bestTwelve[i].verticalPromoImage;
             }
             //putting titles into html
             let skinTitle = document.getElementsByClassName('skin-title');
-            for(i=0;i<skinPic.length;i++) {
+            for(let i=0;i<skinPic.length;i++) {
                 skinTitle[i].innerHTML = bestTwelve[i].displayName;
             }
             //putting tiers into html
             let skinTier = document.getElementsByClassName('tier');
-            for(i=0;i<skinTier.length;i++) {
+            for(let i=0;i<skinTier.length;i++) {
                 skinTier[i].innerHTML = bestTwelve[i].contentTier;
             }
             //putting prices into html
             let skinPrice = document.getElementsByClassName('price');
-            for(i=0;i<skinPrice.length;i++) {
-                skinPrice[i].innerHTML = bestTwelve[i].price + " VP";
+            for(let i=0;i<skinPrice.length;i++) {
+                skinPrice[i].innerHTML = (bestTwelve[i].price) + " VP";
             }
         }
         showTopratedSkins();

@@ -122,8 +122,7 @@
                             <li class="tier top-rated-list-item">Tier</li>
                             <li class="price top-rated-list-item">Cost</li>
                         </div>
-                        <div class="overlay">
-                        </div>
+                        <div class="overlay"></div>
                     </div>
                     <div class="top-rated-item">
                         <div class="top-rated-image">
@@ -134,9 +133,7 @@
                             <li class="tier top-rated-list-item">Tier</li>
                             <li class="price top-rated-list-item">Cost</li>
                         </div>
-                        <div class="overlay">
-
-                        </div>
+                        <div class="overlay"></div>
                     </div>
                     <div class="top-rated-item">
                         <div class="top-rated-image">
@@ -332,6 +329,8 @@
             </div>
         </div>
     </div>
+
+    <!-- === SLIDER MODAL === -->
     <div class="modal-container" id="slider-modal">
         <div class="modal-content">
             <div class="modal-title" id="modal-title">
@@ -355,6 +354,45 @@
             </div>
         </div>
     </div>
+
+    <!-- === TOP RATED MODAL === -->
+    <div class="modal-container" id="top-rated-modal">
+        <div class="modal-content">
+            <div class="modal-title" id="tr-title">
+                <h2 id="mod-title">Title</h2>
+            </div>
+            <div class="modal-image" id="tr-image">
+                <img id="tr-mod-img" src="" alt="img">
+            </div>
+            <div class="modal-text" id="tr-text">
+                <ul class="modal-text-list">
+                    <li>Content Tier: <span id="tier-span"></span></li>
+                    <li>Cost in valorant points: <span id="cost-span"></span></li>
+                </ul>
+            </div>
+            <div class="modal-button">
+                <button id="tr-close">X</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- === BEST PLAYER MODAL === -->
+    <div class="modal-container" id="best-player-modal">
+        <div class="modal-content">
+            <div class="modal-text" id="bp-modal-text">
+                <ul class="modal-text-list">
+                    <li>Username: <span id="uname-span"></span></li>
+                    <li>Tagline: <span id="tag-span"></span></li>
+                    <li>Rank: Radiant <span id="rank-span"></span></li>
+                    <li>Number of wins: <span id="win-span"></span></li>
+                </ul>
+            </div>
+            <div class="modal-button">
+                <button id="bp-close">X</button>
+            </div>
+        </div>
+    </div>
+
 </main>
 <!-- === FOOTER === -->
 <footer>

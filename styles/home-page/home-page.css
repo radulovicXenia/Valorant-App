@@ -108,6 +108,7 @@ nav ul li a:hover, .active-li-item {
 main{
     position: relative;
 }
+
 .modal-container {
     opacity: 0;
     pointer-events: none;
@@ -150,6 +151,7 @@ main{
 }
 .modal-text > .modal-text-list {
     list-style-type: none;
+    padding: 0;
 }
 .modal-text-list > li {
     margin-bottom: 0.5em;
