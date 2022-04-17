@@ -129,6 +129,7 @@ main{
     display: block;
     width: 600px;
     max-width: 100%;
+    border-radius: 10px;
     padding: 2em;
     background-color: aliceblue;
 }
@@ -136,15 +137,41 @@ main{
     text-align: center;
 }
 .modal-content > .modal-image {
+    border-radius: 10px;
+    overflow: hidden;
     display: block;
+}
+.modal-image > img {
+    width: 100%;
+    height: 100%;
 }
 .modal-content > .modal-text {
     text-align: center;
 }
+.modal-text > .modal-text-list {
+    list-style-type: none;
+}
+.modal-text-list > li {
+    margin-bottom: 0.5em;
+}
+.modal-text-list > li > a {
+    text-decoration: none;
+    color: #FA4454;
+}
 .modal-content > .modal-button > button {
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #0f1922;
+    padding: 0.5em 1em;
+    color: white;
     position: absolute;
     top: 1em;
     right: 1em;
+}
+.modal-content > .modal-button > button:hover {
+    background-color: #FA4454;
+    transition: 0.4s ease;
 }
 /* === CONTAINER === */
 .container {
@@ -264,6 +291,7 @@ main{
     max-width: 885px;
     border-radius: 10px;
     overflow: hidden;
+    transition: all 0.4s ease;
 }
 
 .top-rated-tab {
@@ -349,13 +377,14 @@ main{
     width: 100%;
     height: 100%;
     position: absolute;
-    background-color: #0f1922b4;
-    visibility: hidden;
+    /*background-color: #0f1922b4;*/
+    background-color: #fa44538c;
+    opacity: 0;
 }
 
 .top-rated-tab > .top-rated-item:hover .overlay {
-    visibility: visible;
-    transition: 0.5s ease;
+    opacity: 1;
+    transition: 0.4s ease;
 }
 
 .top-rated-tab-two {
@@ -386,8 +415,8 @@ main{
     visibility: hidden;
 }
 .top-rated-tab-two > .top-rated-item:hover .overlay {
-    visibility: visible;
-    transition: 0.5s ease;
+    opacity: 1;
+    transition: 0.4s ease;
 }
 
 
@@ -463,7 +492,8 @@ main{
 .best-player:hover .overlay {
     top: 0;
     left: 0;
-    visibility: visible;
+    opacity: 1;
+    transition: 0.4s ease;
 }
 
 .best-player > .player-card {

@@ -332,17 +332,27 @@
             </div>
         </div>
     </div>
-
-    <div class="modal-container" id="modal-container">
+    <div class="modal-container" id="slider-modal">
         <div class="modal-content">
-            <div class="modal-title" id="modal-title">Title</div>
+            <div class="modal-title" id="modal-title">
+                <h2 id="mod-title">Title</h2>
+            </div>
             <div class="modal-image" id="modal-image">
                 <img id="mod-img" src="" alt="img">
             </div>
-            <div class="modal-text" id="modal-text">some content</div>
+            <div class="modal-text" id="modal-text">
+                <ul class="modal-text-list">
+                    <li>Patch Date: <span id="date-span"></span></li>
+                    <li>Changes: <span id="changes-span"></span></li>
+                    <li>You can read more about this patch at the following link: 
+                        <br>
+                        <a id="link-span" href=""></a>
+                    </li>
+                </ul>
+            </div>
             <div class="modal-button">
-            <button id="close">X</button>
-        </div>
+                <button id="close">X</button>
+            </div>
         </div>
     </div>
 </main>

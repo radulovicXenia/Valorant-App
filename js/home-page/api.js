@@ -11,37 +11,43 @@ fetch("https://jsonblob.com/api/964114737269063680")
         function showSliderInfo() {
             let readMore = document.querySelectorAll("#read-more");
             let modalClose = document.querySelector("#close");
-            let modalWindow = document.querySelector("#modal-container");
-            let modalTitle = document.getElementsByClassName("modal-title");
-            let modalImage = document.getElementById("mod-img");
-            let modaltext = document.getElementsByClassName("modal-text"); 
+            let modalWindow = document.querySelector("#slider-modal");
+            let modalTitle = document.querySelector("#mod-title");
+            let modalImage = document.querySelector("#mod-img");
+            let modalDate = document.querySelector("#date-span");
+            let modalChanges = document.querySelector("#changes-span");
+            let modalLink = document.querySelector("#link-span");
 
             //sort patch notes by date
             let sortedbyDate = patchNotes.sort((a,b) => Date.parse(b.date) - Date.parse(a.date));
 
             //show titles
             let slideTitles = document.getElementsByClassName('patchNote');
-            for (i=0; i< slideTitles.length; i++) {
+            for (let i=0; i< slideTitles.length; i++) {
                 slideTitles[i].innerHTML = sortedbyDate[i].title;
             }
 
             //show cover pictures
             let sliderImages = document.getElementsByClassName('sliderImg');
-            for (i=0; i< sliderImages.length; i++) {
+            for (let i=0; i< sliderImages.length; i++) {
                 sliderImages[i].src = sortedbyDate[i].cover;
             }
             
-            /*for(i=0;i<readMore.length;i++) {
+            for(let i=0;i<readMore.length;i++) {
                 readMore[i].addEventListener("click", function() {
                     modalWindow.classList.add("show");
-                    modalTitle[i].innerHTML = sortedbyDate[i].title;
-                    modalImage[i].src = sortedbyDate[i].cover;
+                    modalTitle.innerHTML = sortedbyDate[i].title;
+                    modalImage.src = sortedbyDate[i].cover;
+                    modalDate.innerHTML = sortedbyDate[i].date;
+                    modalChanges.innerHTML = sortedbyDate[i].changes;
+                    modalLink.innerHTML = sortedbyDate[i].title;
+                    modalLink.href = sortedbyDate[i].link;
                 });
             };
 
             modalClose.addEventListener("click", function() {
                 modalWindow.classList.remove("show");
-            });*/
+            });
         }
         showSliderInfo();
 
