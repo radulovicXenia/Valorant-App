@@ -122,8 +122,7 @@
                             <li class="tier top-rated-list-item">Tier</li>
                             <li class="price top-rated-list-item">Cost</li>
                         </div>
-                        <div class="overlay">
-                        </div>
+                        <div class="overlay"></div>
                     </div>
                     <div class="top-rated-item">
                         <div class="top-rated-image">
@@ -134,9 +133,7 @@
                             <li class="tier top-rated-list-item">Tier</li>
                             <li class="price top-rated-list-item">Cost</li>
                         </div>
-                        <div class="overlay">
-
-                        </div>
+                        <div class="overlay"></div>
                     </div>
                     <div class="top-rated-item">
                         <div class="top-rated-image">
@@ -333,18 +330,69 @@
         </div>
     </div>
 
-    <div class="modal-container" id="modal-container">
+    <!-- === SLIDER MODAL === -->
+    <div class="modal-container" id="slider-modal">
         <div class="modal-content">
-            <div class="modal-title" id="modal-title">Title</div>
+            <div class="modal-title" id="modal-title">
+                <h2 id="mod-title">Title</h2>
+            </div>
             <div class="modal-image" id="modal-image">
                 <img id="mod-img" src="" alt="img">
             </div>
-            <div class="modal-text" id="modal-text">some content</div>
+            <div class="modal-text" id="modal-text">
+                <ul class="modal-text-list">
+                    <li>Patch Date: <span id="date-span"></span></li>
+                    <li>Changes: <span id="changes-span"></span></li>
+                    <li>You can read more about this patch at the following link: 
+                        <br>
+                        <a id="link-span" href=""></a>
+                    </li>
+                </ul>
+            </div>
             <div class="modal-button">
-            <button id="close">X</button>
-        </div>
+                <button id="close">X</button>
+            </div>
         </div>
     </div>
+
+    <!-- === TOP RATED MODAL === -->
+    <div class="modal-container" id="top-rated-modal">
+        <div class="modal-content">
+            <div class="modal-title" id="tr-title">
+                <h2 id="tr-mod-title">Title</h2>
+            </div>
+            <div class="modal-image" id="tr-image">
+                <img id="tr-mod-img" src="" alt="img">
+            </div>
+            <div class="modal-text" id="tr-text">
+                <ul class="modal-text-list">
+                    <li>Content Tier: <span id="tier-span"></span></li>
+                    <li>Cost in valorant points: <span id="cost-span"></span></li>
+                </ul>
+            </div>
+            <div class="modal-button">
+                <button id="tr-close">X</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- === BEST PLAYER MODAL === -->
+    <div class="modal-container" id="best-player-modal">
+        <div class="modal-content">
+            <div class="modal-text" id="bp-modal-text">
+                <ul class="modal-text-list">
+                    <li>Username: <span id="uname-span"></span></li>
+                    <li>Tagline: <span id="tag-span"></span></li>
+                    <li>Rank: Radiant <span id="rank-span"></span></li>
+                    <li>Number of wins: <span id="win-span"></span></li>
+                </ul>
+            </div>
+            <div class="modal-button">
+                <button id="bp-close">X</button>
+            </div>
+        </div>
+    </div>
+
 </main>
 <!-- === FOOTER === -->
 <footer>
@@ -371,11 +419,9 @@
     </div>
     <div class="additional-information">Developed by Ognjen Kečina & Ksenija Radulović</div>
 </footer>
-<script src="js/home-page/modals.js"></script>
 <script src="js/home-page/home-page-slider.js"></script>
 <script src="js/home-page/navigation-menu.js"></script>
 <script src="js/home-page/home-page-top-rated.js"></script>
 <script src="js/home-page/api.js"></script>
-<script src="js/home-page/leaderboard.js"></script>
 </body>
 </html>

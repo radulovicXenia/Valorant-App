@@ -26,4 +26,30 @@ fetch("https://valorant-api.com/v1/maps")
             }
         }
         showMaps();
+
+        function showMapModal() {
+
+
+            //getting elements
+            let mapCard = document.querySelectorAll(".map-block");
+            let mapModalWindow = document.querySelector("#map-modal");
+            let mapModalClose = document.querySelector("#map-close");
+            let mapModalTitle = document.querySelector("#map-mod-title");
+            let mapModalImage = document.querySelector("#map-mod-img");
+            let mapModalDescription = document.querySelector("#map-desc");
+
+            //modal window
+            for(let i=0;i<mapCard.length;i++) {
+                mapCard[i].addEventListener("click", function() {
+                    mapModalWindow.classList.add("show");
+                    mapModalTitle.innerHTML = maps[i].displayName;
+                    mapModalImage.src = maps[i].splash;
+                    mapModalDescription.innerHTML = "Real life coordinates: " + maps[i].coordinates;
+                })
+            }
+            mapModalClose.addEventListener("click", function() {
+                mapModalWindow.classList.remove("show");
+            })
+        }
+        showMapModal();
     })
